@@ -1,0 +1,23 @@
+{
+  "name": "eve-projet_transversal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aelyce11/eve-projet_transversal.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aelyce11/eve-projet_transversal/issues"
+  },
+  "homepage": "https://github.com/Aelyce11/eve-projet_transversal#readme",
+  "dependencies": {
+    "hapi": "^18.1.0",
+    "hoek": "^6.1.3"
+  }
+}
