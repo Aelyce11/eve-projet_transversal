@@ -17,7 +17,5 @@
   },
   "homepage": "https://github.com/Aelyce11/eve-projet_transversal#readme",
   "dependencies": {
-    "hapi": "^18.1.0",
-    "hoek": "^6.1.3"
   }
 }
