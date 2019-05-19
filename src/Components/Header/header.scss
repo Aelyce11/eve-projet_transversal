@@ -1,0 +1,71 @@
+@import "../../Static/_Base.scss";
+
+header {
+	height: 152px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+	background-image: url(../../Pictures/header/header-bg_left.png), url(../../Pictures/header/header-bg_right.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom left, bottom right;
+	padding: 20px 50px;
+	& > div {
+		flex: 1;
+		display: flex;
+	}
+	.header-right {
+		align-items: center;
+		justify-content: space-around;
+	}
+}
+
+#logo {
+	height: 100px;
+	margin: 0px 100px;
+}
+
+.header-right {
+	display: flex;
+	align-items: center;
+}
+
+.accessButton {
+	button {
+		background-color: $blue;
+		border: 3px solid $white;
+		border-radius: 50%;
+		padding: 10px;
+		box-sizing: border-box;
+		height: 70px;
+		width: 70px;
+	}
+	.bubble {
+		display: none;
+		background-color: red;
+		&.unfold {
+			display: block;
+		}
+	}
+}
+.boxButton,
+.bagButton,
+.profileButton {
+	p {
+		display: none;
+		text-align: center;
+	}
+	button {
+		&:hover ~ p {
+			display: block;
+		}
+	}
+	.bubble {
+		display: none;
+		background-color: red;
+		&.unfold {
+			display: block;
+		}
+	}
+}
