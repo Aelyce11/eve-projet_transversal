@@ -1,0 +1,10 @@
+@import "../../Static/_Base.scss";
+
+footer {
+	background-color: $greenDark;
+	display: flex;
+
+	* {
+		color: $white;
+	}
+}

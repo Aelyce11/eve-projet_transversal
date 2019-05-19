@@ -5,8 +5,22 @@ export default class Searchbar extends Component {
 	render() {
 		return (
 			<div id="searchbar">
-				<input type="text" />
-				<button />
+				<form>
+					<div className="input">
+						<input type="text" placeholder="Recherche..." />
+						<button>
+							<img src={icon_search} />
+						</button>
+					</div>
+					<div className="dropdown">
+						<formarea>
+							<label>
+								Trouvez ce dont <strong>vous</strong> avez besoin :
+							</label>
+							<div>Things</div>
+						</formarea>
+					</div>
+				</form>
 			</div>
 		)
 	}

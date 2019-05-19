@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Asap|Asap:400,500,600|Baloo+Bhai");
+@import url("https://fonts.googleapis.com/css?family=Asap|Asap:400,400i,500,600|Baloo+Bhai");
 * {
   background: none;
   margin: 0;
@@ -14,6 +14,7 @@ body {
   min-height: 100vh;
   width: 100vw;
   box-sizing: border-box;
+  font-size: 20px;
 }
 
 h1 {
@@ -38,7 +39,8 @@ h4 {
 }
 
 a,
-p {
+p,
+input {
   font-family: "Asap", sans-serif;
   font-size: 20px;
 }
@@ -62,6 +64,40 @@ header > div {
 header .header-right {
   align-items: center;
   justify-content: space-around;
+}
+
+#searchbar {
+  width: 100%;
+  margin-left: 100px;
+}
+#searchbar * {
+  box-sizing: border-box;
+}
+#searchbar .input {
+  position: relative;
+}
+#searchbar .input input {
+  width: 100%;
+  border: 3px solid #2d4e47;
+  padding: 0.55em;
+  border-radius: 100px;
+}
+#searchbar .input input::placeholder {
+  font-style: italic;
+  color: rgba(45, 78, 71, 0.5);
+}
+#searchbar .input button {
+  position: absolute;
+  right: 0px;
+  background-color: #2d4e47;
+  padding: 0.6em;
+  border-radius: 0px 100px 100px 100px;
+}
+#searchbar .input:focus ~ .dropdown {
+  display: block;
+}
+#searchbar .dropdown {
+  display: none;
 }
 
 #logo {

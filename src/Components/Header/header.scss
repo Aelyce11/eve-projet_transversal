@@ -21,6 +21,40 @@ header {
 	}
 }
 
+#searchbar {
+	width: 100%;
+	margin-left: 100px;
+	* {
+		box-sizing: border-box;
+	}
+	.input {
+		position: relative;
+		input {
+			width: 100%;
+			border: 3px solid $greenDark;
+			padding: .55em;
+			border-radius: 100px;
+			&::placeholder {
+				font-style: italic;
+				color: rgba($color: $greenDark, $alpha: .5);
+			}
+		}
+		button {
+			position: absolute;
+			right: 0px;
+			background-color: $greenDark;
+			padding: .6em;
+			border-radius: 0px 100px 100px 100px;
+		}
+		&:focus ~ .dropdown {
+			display: block;
+		}
+	}
+	.dropdown {
+		display: none;
+	}
+}
+
 #logo {
 	height: 100px;
 	margin: 0px 100px;

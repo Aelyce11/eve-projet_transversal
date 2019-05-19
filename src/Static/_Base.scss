@@ -10,7 +10,7 @@ $red: #ff322e;
 $white: #fff;
 $black: #000;
 
-@import url('https://fonts.googleapis.com/css?family=Asap|Asap:400,500,600|Baloo+Bhai');
+@import url('https://fonts.googleapis.com/css?family=Asap|Asap:400,400i,500,600|Baloo+Bhai');
 
 * {
 	background: none;
@@ -27,6 +27,7 @@ body {
 	min-height: 100vh;
 	width: 100vw;
 	box-sizing: border-box;
+	font-size: 20px;
 }
 
 h1 {
@@ -48,7 +49,8 @@ h4 {
 }
 
 a,
-p {
+p,
+input {
 	font-family: 'Asap', sans-serif;
 	font-size: 20px;
 }
