@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-
 const Pool = require('pg').Pool
+
 const pool = new Pool({
   user: 'me',
   host: 'localhost',
