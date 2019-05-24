@@ -1,0 +1,25 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    width: 100vw;
+    height: 74px;
+    background-color: #FFF1E7;
+}
+
+a{
+    list-style: none;
+    color: #009369;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+
+li{
+    align-items: center;
+}
