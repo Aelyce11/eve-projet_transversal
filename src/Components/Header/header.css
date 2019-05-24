@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css?family=Asap|Asap:400,500,600|Baloo+Bhai");
+* {
+  background: none;
+  margin: 0;
+  border: none;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: sans-serif;
+  color: #000;
+}
+
+body {
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Baloo Bhai", sans-serif;
+  font-size: 60px;
+}
+
+h2 {
+  font-family: "Baloo Bhai", sans-serif;
+  font-size: 36px;
+}
+
+h3 {
+  font-family: "Asap", sans-serif;
+  font-size: 30px;
+}
+
+h4 {
+  font-family: "Asap", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+a,
+p {
+  font-family: "Asap", sans-serif;
+  font-size: 20px;
+}
+
+header {
+  height: 152px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  background-image: url(../../Pictures/header/header-bg_left.png), url(../../Pictures/header/header-bg_right.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom left, bottom right;
+  padding: 20px 50px;
+}
+header > div {
+  flex: 1;
+  display: flex;
+}
+header .header-right {
+  align-items: center;
+  justify-content: space-around;
+}
+
+#logo {
+  height: 100px;
+  margin: 0px 100px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.accessButton button {
+  background-color: #1a509f;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+  height: 70px;
+  width: 70px;
+}
+.accessButton .bubble {
+  display: none;
+  background-color: red;
+}
+.accessButton .bubble.unfold {
+  display: block;
+}
+
+.boxButton p,
+.bagButton p,
+.profileButton p {
+  display: none;
+  text-align: center;
+}
+.boxButton button:hover ~ p,
+.bagButton button:hover ~ p,
+.profileButton button:hover ~ p {
+  display: block;
+}
+.boxButton .bubble,
+.bagButton .bubble,
+.profileButton .bubble {
+  display: none;
+  background-color: red;
+}
+.boxButton .bubble.unfold,
+.bagButton .bubble.unfold,
+.profileButton .bubble.unfold {
+  display: block;
+}
+
+/*# sourceMappingURL=header.css.map */
