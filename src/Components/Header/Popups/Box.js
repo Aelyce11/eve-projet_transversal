@@ -1,5 +1,6 @@
+import './popup.css'
 import React, { Component } from 'react'
-import icon_box from '../../Pictures/header/icons/box.svg'
+import icon_box from '../../../Pictures/header/icons/box.svg'
 
 export default class Box extends Component {
 	constructor(props) {
@@ -21,8 +22,10 @@ export default class Box extends Component {
 				<button for="box" onClick={this.toggle.bind(this)}>
 					<img src={icon_box} alt="Mon panier" />
 				</button>
-				<p>Ma box</p>
-				<div className={dispClass.join(' ')}>I WORK</div>
+				<div className={dispClass.join(' ')}>
+					<h3>Ma boîte</h3>
+					<div className="content">TEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEST</div>
+				</div>
 			</div>
 		)
 	}

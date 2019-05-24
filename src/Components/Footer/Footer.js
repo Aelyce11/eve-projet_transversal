@@ -5,13 +5,14 @@ import { Link } from 'react-router-dom'
 import icon_facebook from '../../Pictures/icons/white/social-facebook.svg'
 import icon_instagram from '../../Pictures/icons/white/social-instagram.svg'
 import icon_twitter from '../../Pictures/icons/white/social-twitter.svg'
+import logo_white from '../../Pictures/logo/logo-white.svg'
 
 export default class Footer extends Component {
 	render() {
 		return (
 			<footer>
 				<div>
-					<h2>Transparence</h2>
+					<h3>Transparence</h3>
 					<ul>
 						<li>
 							<Link to="/">C.G.U</Link>
@@ -31,7 +32,7 @@ export default class Footer extends Component {
 					</ul>
 				</div>
 				<div>
-					<h2>Service</h2>
+					<h3>Service</h3>
 					<ul>
 						<li>
 							<Link to="/">L'abonnement</Link>
@@ -50,17 +51,17 @@ export default class Footer extends Component {
 						</li>
 					</ul>
 				</div>
-				<div>
+				<div className="community">
 					<div>
-						<h2>Reste aux nouvelles</h2>
-						<formarea id="newsletter">
-							<label for="newsletter">Adresse mail :</label>
-							<input type="text" />
+						<h3>Reste aux nouvelles</h3>
+						<fieldset>
+							<legend>Adresse mail :</legend>
+							<input type="email" placeholder="eve.dujardin@gmail.com" />
 							<button>OK!</button>
-						</formarea>
+						</fieldset>
 					</div>
 					<div>
-						<h2>Rejoins la communautève !</h2>
+						<h3>Rejoins la communautève !</h3>
 						<div>
 							<Link to="https://www.facebook.com/">
 								<img src={icon_facebook} />
@@ -73,6 +74,9 @@ export default class Footer extends Component {
 							</Link>
 						</div>
 					</div>
+				</div>
+				<div>
+					<img src={logo_white} />
 				</div>
 			</footer>
 		)

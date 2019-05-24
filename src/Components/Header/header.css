@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Asap|Asap:400,400i,500,600|Baloo+Bhai");
+@import url("https://fonts.googleapis.com/css?family=Asap:400,400i,500,600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Asap+Condensed:400,500,600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap");
 * {
   background: none;
   margin: 0;
@@ -28,8 +30,9 @@ h2 {
 }
 
 h3 {
-  font-family: "Asap", sans-serif;
+  font-family: "Asap Condensed", sans-serif;
   font-size: 30px;
+  font-weight: 600;
 }
 
 h4 {
@@ -40,7 +43,8 @@ h4 {
 
 a,
 p,
-input {
+input,
+legend {
   font-family: "Asap", sans-serif;
   font-size: 20px;
 }
@@ -108,46 +112,6 @@ header .header-right {
 .header-right {
   display: flex;
   align-items: center;
-}
-
-.accessButton button {
-  background-color: #1a509f;
-  border: 3px solid #fff;
-  border-radius: 50%;
-  padding: 10px;
-  box-sizing: border-box;
-  height: 70px;
-  width: 70px;
-}
-.accessButton .bubble {
-  display: none;
-  background-color: red;
-}
-.accessButton .bubble.unfold {
-  display: block;
-}
-
-.boxButton p,
-.bagButton p,
-.profileButton p {
-  display: none;
-  text-align: center;
-}
-.boxButton button:hover ~ p,
-.bagButton button:hover ~ p,
-.profileButton button:hover ~ p {
-  display: block;
-}
-.boxButton .bubble,
-.bagButton .bubble,
-.profileButton .bubble {
-  display: none;
-  background-color: red;
-}
-.boxButton .bubble.unfold,
-.bagButton .bubble.unfold,
-.profileButton .bubble.unfold {
-  display: block;
 }
 
 /*# sourceMappingURL=header.css.map */

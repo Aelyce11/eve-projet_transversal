@@ -1,5 +1,6 @@
+import './popup.css'
 import React, { Component } from 'react'
-import icon_profile from '../../Pictures/header/icons/profile.svg'
+import icon_profile from '../../../Pictures/header/icons/profile.svg'
 
 export default class Profile extends Component {
 	constructor(props) {
@@ -21,8 +22,10 @@ export default class Profile extends Component {
 				<button for="profile" onClick={this.toggle.bind(this)}>
 					<img src={icon_profile} alt="Mon panier" />
 				</button>
-				<p>Ma box</p>
-				<div className={dispClass.join(' ')}>I WORK</div>
+				<div className={dispClass.join(' ')}>
+					<h3>Mon espace</h3>
+					<div className="content">TEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEST</div>
+				</div>
 			</div>
 		)
 	}

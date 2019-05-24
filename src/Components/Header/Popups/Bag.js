@@ -1,5 +1,8 @@
+import './popup.css'
 import React, { Component } from 'react'
-import icon_bag from '../../Pictures/header/icons/bag.svg'
+import Item from './Item.js'
+
+import icon_bag from '../../../Pictures/header/icons/bag.svg'
 
 export default class Bag extends Component {
 	constructor(props) {
@@ -16,13 +19,28 @@ export default class Bag extends Component {
 			bagClass.push('disp')
 			dispClass.push('unfold')
 		}
+
+		let price_total = 56.6
+
 		return (
 			<div className={bagClass.join(' ')}>
 				<button for="bag" onClick={this.toggle.bind(this)}>
 					<img src={icon_bag} alt="Mon panier" />
 				</button>
-				<p>Mon panier</p>
-				<div className={dispClass.join(' ')}>I WORK</div>
+				<div className={dispClass.join(' ')}>
+					<h3>Mon panier</h3>
+					<div className="content">
+						<Item />
+					</div>
+					<div className="total">
+						<div>
+							<span>Total</span>
+							<span>{price_total}&euro;</span>
+						</div>
+						<hr />
+						<button>Valider mon panier</button>
+					</div>
+				</div>
 			</div>
 		)
 	}

@@ -2,13 +2,13 @@ import './header.css'
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
-import logo from '../../Pictures/logo/logo-full.svg'
+import logo from '../../Pictures/logo/logo-color_full.svg'
 
-import Accessibility from './Accessibility'
-import Searchbar from './Searchbar'
-import Box from './Box'
-import Bag from './Bag'
-import Profile from './Profile'
+import Accessibility from './Accessibility/Accessibility'
+import Searchbar from './Searchbar/Searchbar'
+import Box from './Popups/Box'
+import Bag from './Popups/Bag'
+import Profile from './Popups/Profile'
 
 export default class Header extends Component {
 	handleClick = (e) => {}
