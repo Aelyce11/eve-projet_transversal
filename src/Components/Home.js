@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import WhySubcribe from './WhySubscribe';
-import mabox from '../Pictures/home/mabox.png';
-import './Home.css';
+import React, { Component } from 'react'
+import WhySubcribe from './WhySubscribe'
+import mabox from '../Pictures/home/mabox.png'
+import './Home.css'
 
 export default class Home extends Component {
 	render() {
@@ -32,6 +32,6 @@ export default class Home extends Component {
 					<p>Un peu de lecture ?</p>
 				</div>
 			</div>
-		);
+		)
 	}
 }

@@ -63,15 +63,15 @@ export default class Footer extends Component {
 					<div>
 						<h3>Rejoins la communautève !</h3>
 						<div>
-							<Link to="https://www.facebook.com/">
+							<a href="https://www.facebook.com/">
 								<img src={icon_facebook} />
-							</Link>
-							<Link to="https://www.instagram.com/">
+							</a>
+							<a href="https://www.instagram.com/">
 								<img src={icon_instagram} />
-							</Link>
-							<Link to="https://www.twitter.com/">
+							</a>
+							<a href="https://www.twitter.com/">
 								<img src={icon_twitter} />
-							</Link>
+							</a>
 						</div>
 					</div>
 				</div>
