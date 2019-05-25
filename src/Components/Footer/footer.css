@@ -83,9 +83,10 @@ button {
 }
 footer {
   background-color: #2d4e47;
-  display: flex;
-  justify-content: space-between;
   padding: 80px 150px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 100px;
 }
 footer * {
   color: #fff;
@@ -132,6 +133,9 @@ footer > div ul {
 }
 footer > div ul li {
   margin-bottom: 1em;
+}
+footer .logoContainer {
+  display: flex;
 }
 
 /*# sourceMappingURL=footer.css.map */

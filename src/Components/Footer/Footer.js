@@ -64,19 +64,19 @@ export default class Footer extends Component {
 						<h3>Rejoins la communautève !</h3>
 						<div>
 							<a href="https://www.facebook.com/">
-								<img src={icon_facebook} />
+								<img src={icon_facebook} alt="Lien Facebook" />
 							</a>
 							<a href="https://www.instagram.com/">
-								<img src={icon_instagram} />
+								<img src={icon_instagram} alt="Lien Instagram" />
 							</a>
 							<a href="https://www.twitter.com/">
-								<img src={icon_twitter} />
+								<img src={icon_twitter} alt="Lien Twitter" />
 							</a>
 						</div>
 					</div>
 				</div>
-				<div>
-					<img src={logo_white} />
+				<div className="logoContainer">
+					<img src={logo_white} alt="Logo Eve" />
 				</div>
 			</footer>
 		)
