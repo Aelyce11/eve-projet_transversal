@@ -3,10 +3,8 @@ import Home from './Components/Home'
 import Blog from './Components/Blog'
 import Header from './Components/Header/Header'
 import Footer from './Components/Footer/Footer'
-import Dashboard from './Components/Backoffice/Dashboard'
-import NavBulma from './Components/Backoffice/Navbar'
-import Customers from './Components/Backoffice/Customers'
 
+import Dashboard from './Components/Backoffice/Dashboard'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 class App extends Component {
@@ -14,14 +12,14 @@ class App extends Component {
 		return (
 			<div>
 				<Router>
-          <Route path="/admin/" component={NavBulma} />
+
           <Route path="/">
             <Switch>
               <Route path="/admin/" component={Dashboard} />
               <Route path="/" component={Header} />
             </Switch>
           </Route>
-
+          
 					<Route exact path="/" component={Home} />
 					<Route exact path="/blog" component={Blog} />
 
@@ -31,11 +29,7 @@ class App extends Component {
               <Route path="/" component={Footer} />
             </Switch>
           </Route>
-
-          <Route exact path="/admin/customers" component={Customers} />
-
-
-        </Router>
+				</Router>
 			</div>
 		)
 	}

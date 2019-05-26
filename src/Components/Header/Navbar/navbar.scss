@@ -1,0 +1,25 @@
+@import "../../Static/_Base.scss";
+
+.navbar {
+	background-color: $salmonLight;
+	// display: flex;
+	// justify-content: space-between;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-column-gap: 2em;
+	padding: 1em 8em;
+
+	a {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+	}
+	p {
+		color: $greenDark;
+	}
+	img {
+		width: 30%;
+		margin-bottom: .5em;
+	}
+}

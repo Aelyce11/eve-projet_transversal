@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
-import WhySubcribe from './WhySubscribe';
-import mabox from '../Pictures/home/mabox.png';
-import './Home.css';
+import React, { Component } from 'react'
+import WhySubcribe from './WhySubscribe'
+import mabox from '../Pictures/home/mabox.png'
+import './Home.css'
 
 export default class Home extends Component {
 	render() {
 		return (
-			<div className="home">
-				<img className="sub-box" src={mabox} alt="box-presentation" />
+			<div>
+				<img src={mabox} />
 				<WhySubcribe />
 				<div className="text1">
 					<p className="avantages">Plein d’avantages pour</p>
@@ -32,6 +32,6 @@ export default class Home extends Component {
 					<p>Un peu de lecture ?</p>
 				</div>
 			</div>
-		);
+		)
 	}
 }

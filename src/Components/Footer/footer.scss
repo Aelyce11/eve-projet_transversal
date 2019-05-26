@@ -2,9 +2,12 @@
 
 footer {
 	background-color: $greenDark;
-	display: flex;
-	justify-content: space-between;
+	// display: flex;
+	// justify-content: space-between;
 	padding: 80px 150px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-column-gap: 100px;
 
 	* {
 		color: $white;
@@ -53,5 +56,8 @@ footer {
 		li {
 			margin-bottom: 1em;
 		}
+	}
+	.logoContainer {
+		display: flex;
 	}
 }
