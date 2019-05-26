@@ -6,8 +6,8 @@ import './Home.css';
 export default class Home extends Component {
 	render() {
 		return (
-			<div>
-				<img src={mabox} />
+			<div className="home">
+				<img className="sub-box" src={mabox} alt="box-presentation" />
 				<WhySubcribe />
 				<div className="text1">
 					<p className="avantages">Plein d’avantages pour</p>

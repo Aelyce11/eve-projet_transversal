@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Asap:400,400i,500,600&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Asap+Condensed:400,500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Asap+Condensed:400,500,600&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap");
 * {
   background: none;
@@ -32,6 +32,7 @@ h2 {
 h3 {
   font-family: "Asap Condensed", sans-serif;
   font-size: 30px;
+  font-weight: 600;
 }
 
 h4 {
@@ -42,17 +43,50 @@ h4 {
 
 a,
 p,
+span,
 input,
-legend {
+legend,
+button {
   font-family: "Asap", sans-serif;
   font-size: 20px;
 }
 
+@media only screen and (max-width: 920px) {
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  a,
+p,
+span,
+input,
+legend,
+button {
+    font-size: 16px;
+  }
+}
 footer {
   background-color: #2d4e47;
-  display: flex;
-  justify-content: space-between;
   padding: 80px 150px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 100px;
 }
 footer * {
   color: #fff;
@@ -86,9 +120,9 @@ footer .community button {
   background-color: #fff;
   color: #2d4e47;
   font-weight: bold;
-  padding: 1.35em 1em;
+  padding: 0.75em 0.5em;
   right: -1px;
-  top: -0.8em;
+  top: -0.6em;
   border-radius: 12px;
 }
 footer .community a {
@@ -99,6 +133,9 @@ footer > div ul {
 }
 footer > div ul li {
   margin-bottom: 1em;
+}
+footer .logoContainer {
+  display: flex;
 }
 
 /*# sourceMappingURL=footer.css.map */
