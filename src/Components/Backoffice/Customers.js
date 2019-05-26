@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import './bulma.min.css'
 import api from '../Api'
-
-export default class NavBulma extends Component {
+import Sidebar from './Sidebar'
+export default class Customers extends Component {
 
   constructor() {
     super()
@@ -23,6 +23,7 @@ export default class NavBulma extends Component {
     return(
       <div className="container">
         <h1>Customers</h1>
+        {/* <Sidebar /> */}
         <table class="table is-fullwidth">
           <thead>
             <tr>

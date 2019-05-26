@@ -1,7 +1,7 @@
 import './header.css'
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import Navbar from './Navbar/Navbar'
+// import Navbar from './Navbar/Navbar'
 
 import logo from '../../Pictures/logo/logo-color_full.svg'
 
@@ -28,7 +28,7 @@ export default class Header extends Component {
 					<Bag />
 					<Profile />
 				</div>
-          <Navbar />
+          {/* <Navbar /> */}
 			</header>
 		)
 	}
