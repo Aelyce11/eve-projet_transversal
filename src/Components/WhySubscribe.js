@@ -4,7 +4,7 @@ import './WhySubscribe.css'
 export default class WhySubcribe extends Component {
 	render() {
 		return (
-			<div className="container">
+			<div className="container-sub">
 				<div className="list">
 					<div className="div1" />
 					<p>Pourquoi m'abonner ?</p>

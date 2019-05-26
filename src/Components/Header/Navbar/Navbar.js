@@ -1,15 +1,15 @@
-import './navbar.css'
+import './Navbar.css'
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
-import box from '../../Pictures/icons/darkgreen/box-stroke.svg'
-import cup from '../../Pictures/icons/darkgreen/cup-stroke.svg'
-import pad from '../../Pictures/icons/darkgreen/pad-stroke.svg'
-import tampon from '../../Pictures/icons/darkgreen/tampon-stroke.svg'
-import feather from '../../Pictures/icons/darkgreen/feather-stroke.svg'
-import tag from '../../Pictures/icons/darkgreen/tag-stroke.svg'
-import newspaper from '../../Pictures/icons/darkgreen/newspaper-stroke.svg'
-import notepad from '../../Pictures/icons/darkgreen/notepad-stroke.svg'
+import box from '../../../Pictures/icons/darkgreen/box-stroke.svg'
+import cup from '../../../Pictures/icons/darkgreen/cup-stroke.svg'
+import pad from '../../../Pictures/icons/darkgreen/pad-stroke.svg'
+import tampon from '../../../Pictures/icons/darkgreen/tampon-stroke.svg'
+import feather from '../../../Pictures/icons/darkgreen/feather-stroke.svg'
+import tag from '../../../Pictures/icons/darkgreen/tag-stroke.svg'
+import newspaper from '../../../Pictures/icons/darkgreen/newspaper-stroke.svg'
+import notepad from '../../../Pictures/icons/darkgreen/notepad-stroke.svg'
 
 export default class Navbar extends Component {
 	render() {
