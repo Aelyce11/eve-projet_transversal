@@ -11,7 +11,6 @@ import Bag from './Popups/Bag'
 import Profile from './Popups/Profile'
 
 export default class Header extends Component {
-	handleClick = (e) => {}
 	render() {
 		return (
 			<header>

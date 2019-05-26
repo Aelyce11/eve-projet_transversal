@@ -51,6 +51,36 @@ button {
   font-size: 20px;
 }
 
+@media only screen and (max-width: 920px) {
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  a,
+p,
+span,
+input,
+legend,
+button {
+    font-size: 16px;
+  }
+}
 .cart_item {
   position: relative;
   background-color: #fff;
@@ -70,6 +100,14 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.cart_item > span {
+  align-self: flex-end;
+  flex: 1;
+  text-align: right;
+}
+.cart_item > span:nth-of-type(2) {
+  text-align: center;
 }
 
 /*# sourceMappingURL=item.css.map */

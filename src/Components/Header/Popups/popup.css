@@ -43,10 +43,57 @@ h4 {
 
 a,
 p,
+span,
 input,
-legend {
+legend,
+button {
   font-family: "Asap", sans-serif;
   font-size: 20px;
+}
+
+@media only screen and (max-width: 920px) {
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  a,
+p,
+span,
+input,
+legend,
+button {
+    font-size: 16px;
+  }
+}
+.darkness {
+  background-color: rgba(45, 78, 71, 0.6);
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 152px;
+  left: 0px;
+  z-index: 2;
+  display: none;
+}
+
+.unfold ~ .darkness {
+  display: block;
 }
 
 .boxButton,
@@ -99,7 +146,7 @@ legend {
 }
 
 .bagButton .content {
-  padding: 40px;
+  padding: 2em;
   background-color: #f5f9f8;
 }
 .bagButton .total {
@@ -107,8 +154,8 @@ legend {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 100px;
-  padding: 30px 0px;
+  height: 5em;
+  padding: 1.5em 0px;
 }
 .bagButton .total div {
   display: flex;
@@ -130,6 +177,230 @@ legend {
   box-shadow: 3px 3px 0px #00664a;
   border-radius: 50px;
   color: #00664a;
+}
+
+.boxButton .content {
+  padding: 2em;
+  background-color: #f5f9f8;
+}
+.boxButton .detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 6em;
+  padding: 2em 1em;
+}
+.boxButton .detail span {
+  color: #000;
+  padding: 0.25em 0px;
+  text-align: center;
+}
+.boxButton .detail .next {
+  background-color: #fff1e7;
+  color: #00664a;
+}
+.boxButton .detail button {
+  padding: 0.5em;
+  border: 3px solid #00664a;
+  box-shadow: 3px 3px 0px #00664a;
+  border-radius: 50px;
+  color: #00664a;
+  align-self: center;
+}
+
+.profileButton {
+  display: flex;
+  flex-direction: row;
+}
+.profileButton .connexion {
+  display: flex;
+  flex-direction: column;
+}
+.profileButton .connexion form {
+  border-bottom: 2px solid #b3d1c9;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+}
+.profileButton .connexion form fieldset {
+  position: relative;
+  border: 1px solid #b3d1c9;
+  border-radius: 12px;
+  margin-bottom: 1em;
+  margin-right: 3em;
+}
+.profileButton .connexion form input {
+  padding: 0.3em 0.6em 0.6em 0.6em;
+  min-width: 20em;
+}
+.profileButton .connexion form input::placeholder {
+  color: rgba(45, 78, 71, 0.3);
+  font-style: italic;
+}
+.profileButton .connexion form a {
+  color: #2d4e47;
+  text-decoration: underline;
+  font-size: 0.85em;
+}
+.profileButton .connexion form > a {
+  align-self: flex-end;
+  margin-right: 3em;
+}
+.profileButton .connexion form legend {
+  margin-left: 0.5em;
+  padding: 0px 0.2em;
+}
+.profileButton .connexion form div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.5em;
+}
+.profileButton .connexion form button {
+  padding: 0.5em;
+  border: 3px solid #00664a;
+  box-shadow: 3px 3px 0px #00664a;
+  border-radius: 50px;
+  color: #00664a;
+  display: flex;
+  align-self: center;
+}
+.profileButton .connexion form button img {
+  margin-left: 0.5em;
+}
+.profileButton .connexion span {
+  margin-top: -1em;
+  align-self: center;
+  background-color: #b3d1c9;
+  height: 2em;
+  width: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  text-transform: uppercase;
+}
+.profileButton .center {
+  display: grid;
+  grid-template-columns: 50% 2px 50%;
+}
+.profileButton .center div {
+  padding: 4em;
+  margin-bottom: 4em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profileButton .center span {
+  font-style: italic;
+  white-space: nowrap;
+  margin-bottom: 2em;
+}
+.profileButton .center hr {
+  width: 2px;
+  height: 100%;
+  background-color: #b3d1c9;
+}
+.profileButton .center button {
+  padding: 0.5em;
+  border: 3px solid #00664a;
+  box-shadow: 3px 3px 0px #00664a;
+  border-radius: 50px;
+  color: #00664a;
+}
+.profileButton .inscription {
+  display: flex;
+  border-bottom: 2px solid #b3d1c9;
+  flex-direction: column;
+}
+.profileButton .inscription form {
+  border-bottom: 2px solid #b3d1c9;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+}
+.profileButton .inscription form .form-info {
+  position: absolute;
+  bottom: -1.8em;
+  right: 0px;
+  height: 1.2em;
+}
+.profileButton .inscription form fieldset {
+  position: relative;
+  border: 1px solid #b3d1c9;
+  border-radius: 12px;
+  margin-bottom: 1em;
+  margin-right: 3em;
+}
+.profileButton .inscription form input {
+  padding: 0.3em 0.6em 0.6em 0.6em;
+  min-width: 20em;
+}
+.profileButton .inscription form input::placeholder {
+  color: rgba(45, 78, 71, 0.3);
+  font-style: italic;
+}
+.profileButton .inscription form a {
+  color: #2d4e47;
+  text-decoration: underline;
+  font-size: 0.85em;
+}
+.profileButton .inscription form legend {
+  margin-left: 0.5em;
+  padding: 0px 0.2em;
+}
+.profileButton .inscription form div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2.75em;
+}
+.profileButton .inscription form button {
+  padding: 0.5em;
+  border: 3px solid #00664a;
+  box-shadow: 3px 3px 0px #00664a;
+  border-radius: 50px;
+  color: #00664a;
+  display: flex;
+  align-self: center;
+}
+.profileButton .inscription form button img {
+  margin-left: 0.5em;
+}
+.profileButton .inscription span {
+  margin-top: -1em;
+  align-self: center;
+  background-color: #b3d1c9;
+  height: 2em;
+  width: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  text-transform: uppercase;
+}
+.profileButton .fb-button,
+.profileButton .ggl-button {
+  padding: 1em 5em;
+  border-radius: 6px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1em 2em;
+  box-sizing: border-box;
+}
+.profileButton .fb-button img,
+.profileButton .ggl-button img {
+  position: absolute;
+  left: -2px;
+}
+.profileButton .fb-button {
+  border: 2px solid #1a509f;
+}
+.profileButton .ggl-button {
+  border: 2px solid #00664a;
+  margin-bottom: 2em;
 }
 
 /*# sourceMappingURL=popup.css.map */

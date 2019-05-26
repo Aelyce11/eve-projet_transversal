@@ -108,6 +108,7 @@ export default class Accessibility extends Component {
 						</button>
 					</div>
 				</div>
+				<div className="darkness" />
 			</div>
 		)
 	}

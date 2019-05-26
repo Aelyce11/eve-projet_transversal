@@ -1,5 +1,18 @@
 @import "../../../Static/_Base.scss";
 
+.darkness {
+	background-color: rgba($color: $greenDark, $alpha: .6);
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+	top: 152px;
+	left: 0px;
+	z-index: 2;
+	display: none;
+}
+.unfold ~ .darkness {
+	display: block;
+}
 .boxButton,
 .bagButton,
 .profileButton {
@@ -44,16 +57,16 @@
 
 .bagButton {
 	.content {
-		padding: 40px;
-		background-color: $greenGrey;
+		padding: 2em;
+		background-color: $greenLightGrey;
 	}
 	.total {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 		align-items: center;
-		height: 100px;
-		padding: 30px 0px;
+		height: 5em;
+		padding: 1.5em 0px;
 
 		div {
 			display: flex;
@@ -76,5 +89,242 @@
 			border-radius: 50px;
 			color: $green;
 		}
+	}
+}
+
+.boxButton {
+	.content {
+		padding: 2em;
+		background-color: $greenLightGrey;
+	}
+	.detail {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 6em;
+		padding: 2em 1em;
+
+		span {
+			color: $black;
+			padding: .25em 0px;
+			text-align: center;
+		}
+		.next {
+			background-color: $salmonLight;
+			color: $green;
+		}
+		button {
+			padding: .5em;
+			border: 3px solid $green;
+			box-shadow: 3px 3px 0px $green;
+			border-radius: 50px;
+			color: $green;
+			align-self: center;
+		}
+	}
+}
+
+.profileButton {
+	display: flex;
+	flex-direction: row;
+	.connexion {
+		display: flex;
+		// display: none;
+		flex-direction: column;
+
+		form {
+			border-bottom: 2px solid $greenGrey;
+			padding: 2em;
+			display: flex;
+			flex-direction: column;
+
+			fieldset {
+				position: relative;
+				border: 1px solid $greenGrey;
+				border-radius: 12px;
+				margin-bottom: 1em;
+				margin-right: 3em;
+			}
+			input {
+				padding: .3em .6em .6em .6em;
+				min-width: 20em;
+				&::placeholder {
+					color: rgba($color: $greenDark, $alpha: .3);
+					font-style: italic;
+				}
+			}
+			a {
+				color: $greenDark;
+				text-decoration: underline;
+				font-size: .85em;
+			}
+			& > a {
+				align-self: flex-end;
+				margin-right: 3em;
+			}
+			legend {
+				margin-left: .5em;
+				padding: 0px .2em;
+			}
+			div {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				margin-top: 1.5em;
+			}
+			button {
+				padding: .5em;
+				border: 3px solid $green;
+				box-shadow: 3px 3px 0px $green;
+				border-radius: 50px;
+				color: $green;
+				display: flex;
+				align-self: center;
+
+				img {
+					margin-left: .5em;
+				}
+			}
+		}
+		span {
+			margin-top: -1em;
+			align-self: center;
+			background-color: $greenGrey;
+			height: 2em;
+			width: 2em;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 50px;
+			text-transform: uppercase;
+		}
+	}
+	.center {
+		display: grid;
+		// display: none;
+		grid-template-columns: 50% 2px 50%;
+
+		div {
+			padding: 4em;
+			margin-bottom: 4em;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		span {
+			font-style: italic;
+			white-space: nowrap;
+			margin-bottom: 2em;
+		}
+		hr {
+			width: 2px;
+			height: 100%;
+			background-color: $greenGrey;
+		}
+		button {
+			padding: .5em;
+			border: 3px solid $green;
+			box-shadow: 3px 3px 0px $green;
+			border-radius: 50px;
+			color: $green;
+		}
+	}
+	.inscription {
+		display: flex;
+		// display: none;
+		border-bottom: 2px solid $greenGrey;
+		flex-direction: column;
+
+		form {
+			border-bottom: 2px solid $greenGrey;
+			padding: 2em;
+			display: flex;
+			flex-direction: column;
+			.form-info {
+				position: absolute;
+				bottom: -1.8em;
+				right: 0px;
+				height: 1.2em;
+			}
+			fieldset {
+				position: relative;
+				border: 1px solid $greenGrey;
+				border-radius: 12px;
+				margin-bottom: 1em;
+				margin-right: 3em;
+			}
+			input {
+				padding: .3em .6em .6em .6em;
+				min-width: 20em;
+				&::placeholder {
+					color: rgba($color: $greenDark, $alpha: .3);
+					font-style: italic;
+				}
+			}
+			a {
+				color: $greenDark;
+				text-decoration: underline;
+				font-size: .85em;
+			}
+			legend {
+				margin-left: .5em;
+				padding: 0px .2em;
+			}
+			div {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				margin-top: 2.75em;
+			}
+			button {
+				padding: .5em;
+				border: 3px solid $green;
+				box-shadow: 3px 3px 0px $green;
+				border-radius: 50px;
+				color: $green;
+				display: flex;
+				align-self: center;
+
+				img {
+					margin-left: .5em;
+				}
+			}
+		}
+		span {
+			margin-top: -1em;
+			align-self: center;
+			background-color: $greenGrey;
+			height: 2em;
+			width: 2em;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 50px;
+			text-transform: uppercase;
+		}
+	}
+
+	.fb-button,
+	.ggl-button {
+		padding: 1em 5em;
+		border-radius: 6px;
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 1em 2em;
+		box-sizing: border-box;
+
+		img {
+			position: absolute;
+			left: -2px;
+		}
+	}
+	.fb-button {
+		border: 2px solid $blue;
+	}
+	.ggl-button {
+		border: 2px solid $green;
+		margin-bottom: 2em;
 	}
 }
