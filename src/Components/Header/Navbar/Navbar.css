@@ -20,23 +20,23 @@ body {
 }
 
 h1 {
-  font-family: "Baloo Bhai", sans-serif;
+  font-family: 'Baloo Bhai', sans-serif;
   font-size: 60px;
 }
 
 h2 {
-  font-family: "Baloo Bhai", sans-serif;
+  font-family: 'Baloo Bhai', sans-serif;
   font-size: 36px;
 }
 
 h3 {
-  font-family: "Asap Condensed", sans-serif;
+  font-family: 'Asap Condensed', sans-serif;
   font-size: 30px;
   font-weight: 600;
 }
 
 h4 {
-  font-family: "Asap", sans-serif;
+  font-family: 'Asap', sans-serif;
   font-size: 20px;
   font-weight: 500;
 }
@@ -47,7 +47,7 @@ span,
 input,
 legend,
 button {
-  font-family: "Asap", sans-serif;
+  font-family: 'Asap', sans-serif;
   font-size: 20px;
 }
 
@@ -55,51 +55,48 @@ button {
   body {
     font-size: 16px;
   }
-
   h1 {
     font-size: 40px;
   }
-
   h2 {
     font-size: 28px;
   }
-
   h3 {
     font-size: 22px;
   }
-
   h4 {
     font-size: 16px;
   }
-
   a,
-p,
-span,
-input,
-legend,
-button {
+  p,
+  span,
+  input,
+  legend,
+  button {
     font-size: 16px;
   }
 }
-.navbar {
+
+.navbar-eve {
   background-color: #fff1e7;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-column-gap: 2em;
   padding: 1em 8em;
 }
-.navbar a {
+
+.navbar-eve a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
-.navbar p {
+
+.navbar-eve p {
   color: #2d4e47;
 }
-.navbar img {
-  width: 30%;
-  margin-bottom: 0.5em;
-}
 
-/*# sourceMappingURL=navbar.css.map */
+.navbar-eve img {
+  width: 30%;
+  margin-bottom: .5em;
+}

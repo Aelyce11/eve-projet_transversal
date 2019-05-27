@@ -1,6 +1,5 @@
 import './popup.css'
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
 
 import icon_profile from '../../../Pictures/header/icons/profile.svg'
 import next from '../../../Pictures/icons/darkgreen/arrow_right.svg'

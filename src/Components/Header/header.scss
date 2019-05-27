@@ -1,6 +1,6 @@
 @import "../../Static/_Base.scss";
 
-header {
+.header-eve {
 	height: 152px;
 	display: flex;
 	justify-content: space-between;
@@ -12,8 +12,9 @@ header {
 	background-repeat: no-repeat;
 	background-position: bottom left, bottom right;
 	position: relative;
-	z-index: 1999;
+	z-index: 19;
 	padding: 1em 2.5em;
+
 	& > div {
 		flex: 1;
 		display: flex;

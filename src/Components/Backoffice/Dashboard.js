@@ -1,13 +1,8 @@
 import React, { Component } from 'react'
-import './bulma.min.css'
-import Sidebar from './Sidebar'
+// import './bulma.min.css'
 
 export default class Dashboard extends Component {
-  render() {
-    return (
-      <div className="dashboard">
-
-      </div>
-    )
-  }
+	render() {
+		return <div className="dashboard" />
+	}
 }
