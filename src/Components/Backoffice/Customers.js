@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './bulma.min.css'
 import api from '../Api'
-import Sidebar from './Sidebar'
+
 export default class Customers extends Component {
 
   constructor() {
@@ -23,7 +23,6 @@ export default class Customers extends Component {
     return(
       <div className="container">
         <h1>Customers</h1>
-        {/* <Sidebar /> */}
         <table class="table is-fullwidth">
           <thead>
             <tr>
@@ -44,7 +43,7 @@ export default class Customers extends Component {
                   <td>{customer.firstname}</td>
                   <td>{customer.email}</td>
                   <td>{customer.phone}</td>
-                  <td>{customer.role}</td>
+                  <td>{customer.Role.name}</td>
                 </tr>
               )
             })}

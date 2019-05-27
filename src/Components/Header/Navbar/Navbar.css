@@ -81,23 +81,23 @@ button {
     font-size: 16px;
   }
 }
-.navbar {
+.navbar-header {
   background-color: #fff1e7;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-column-gap: 2em;
   padding: 1em 8em;
 }
-.navbar a {
+.navbar-header a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
-.navbar p {
+.navbar-header p {
   color: #2d4e47;
 }
-.navbar img {
+.navbar-header img {
   width: 30%;
   margin-bottom: 0.5em;
 }

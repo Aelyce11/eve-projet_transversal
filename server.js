@@ -26,13 +26,31 @@ app.get('/', function (request, response) {
 
  // Get all users
 app.get('/users', (request, response) => {
-  pool.query(`SELECT users.id, users.lastname, users.firstname, users.email, users.phone, roles.name AS "role" 
-              FROM users 
-              INNER JOIN roles ON users.id_role = roles.id ORDER BY id ASC`, 
+
+  
+  pool.query(`SELECT users.*, roles.id AS "role_id", roles.name FROM users INNER JOIN roles ON users.id_role = roles.id ORDER BY users.id ASC`, 
   (error, results) => {
   if (error) throw error;
+    var nrow = []
 
-    response.status(200).json(results.rows)
+    for (let index = 0; index < results.rows.length; index++) {
+        const row = results.rows[index];
+
+        nrow.push({
+            id: row['id'],
+            lastname: row['firstname'],
+            firstname: row['lastname'],
+            email: row['email'],
+            phone: row['phone'],
+            id_role: row['id_role'],
+            Roles: {
+                id: row['role_id'],
+                name: row['name']
+            }
+        })
+    }
+    response.status(200).json(nrow)
+    console.log(results.rows)
   })
 });
 
@@ -85,11 +103,56 @@ app.delete('/users/:id', (request, response) => {
 });
 
 app.get('/products', (request, response) => {
-  pool.query('SELECT * FROM products ORDER BY id ASC', (error, results) => {
-    if (error) throw error
 
-    response.status(200).json(results.rows)
+  pool.query(`
+    SELECT products.*, images.path,product_category.name AS "category", product_vendor.name AS "vendor"
+    FROM products
+    INNER JOIN images ON products.id_image = images.id
+    INNER JOIN product_vendor ON products.id_vendor = product_vendor.id
+    INNER JOIN product_category ON products.id_category = product_category.id
+  `, (error, results) => {
+    if (error) throw error
+    var nrow = []
+
+    for (let index = 0; index < results.rows.length; index++) {
+        const row = results.rows[index];
+
+        nrow.push({
+            id: row['id'],
+            name: row['name'],
+            description: row['description'],
+            utilisation: row['utilisation'],
+            absorbtion: row['absorbtion'],
+            flow: row['flow'],
+            volume: row['volume'],
+            composition: row['composition'],
+            made_id: row['made_id'],
+            lifetime: row['lifetime'],
+            sealing: row['sealing'],
+            ecology: row['ecology'],
+            price: row['price'],
+            images: {
+              id: row['id_image'],
+              path: row['path'],
+            },
+            product_category: {
+              id: row['id_category'],
+              category: row['category'],
+            },
+            product_vendor: {
+              id: row['id_vendor'],
+              vendor: row['vendor'],
+            },
+            quantity: row['quantity'],
+        })
+    }
+    response.status(200).json(nrow)
+    console.log(nrow)
   })
+});
+
+app.post('/products', (request, response) => {
+  const { } = request.body;
 });
 
 

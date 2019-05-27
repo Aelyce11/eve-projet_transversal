@@ -14,7 +14,7 @@ import notepad from '../../../Pictures/icons/darkgreen/notepad-stroke.svg'
 export default class Navbar extends Component {
 	render() {
 		return (
-			<nav className="navbar">
+			<nav className="navbar-header">
 				<Link to="">
 					<img src={box} alt="Les boîtes" />
 					<p>Les boîtes</p>

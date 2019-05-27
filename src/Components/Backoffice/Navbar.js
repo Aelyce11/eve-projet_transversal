@@ -47,27 +47,18 @@ export default class NavBulma extends Component {
                   <a class="navbar-item" href="/admin">
                     Dashboard
                   </a>
-
-                  <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link">
-                      More
+                  <a class="navbar-item">
+                      Orders
+                  </a>
+                    <a class="navbar-item" href="/admin/products">
+                      Products
                     </a>
-
-                    <div class="navbar-dropdown">
                     <a class="navbar-item">
-                        Orders
+                      Articles
                     </a>
-                      <a class="navbar-item">
-                        Products
-                      </a>
-                      <a class="navbar-item">
-                        Articles
-                      </a>
-                      <a class="navbar-item" href="/admin/customers">
-                        Customers
-                      </a>
-                    </div>
-                  </div>
+                    <a class="navbar-item" href="/admin/customers">
+                      Customers
+                    </a>
                 </div>
               </div>
             </nav>

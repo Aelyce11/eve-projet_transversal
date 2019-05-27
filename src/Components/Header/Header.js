@@ -1,7 +1,7 @@
 import './header.css'
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-// import Navbar from './Navbar/Navbar'
+import Navbar from './Navbar/Navbar'
 
 import logo from '../../Pictures/logo/logo-color_full.svg'
 
@@ -15,6 +15,7 @@ export default class Header extends Component {
 	handleClick = (e) => {}
 	render() {
 		return (
+      <div>
 			<header>
 				<div>
 					<Accessibility />
@@ -28,8 +29,9 @@ export default class Header extends Component {
 					<Bag />
 					<Profile />
 				</div>
-          {/* <Navbar /> */}
 			</header>
+      <Navbar />
+      </div>
 		)
 	}
 }
