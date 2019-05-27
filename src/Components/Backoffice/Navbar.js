@@ -32,41 +32,35 @@ export default class NavBulma extends Component {
 							<img src={brand} />
 						</a>
 
-						<a
-							role="button"
-							class="navbar-burger burger"
-							aria-label="menu"
-							aria-expanded="false"
-							data-target="navbarBasicExample"
-						>
+						<a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
 							<span aria-hidden="true" />
 							<span aria-hidden="true" />
 							<span aria-hidden="true" />
 						</a>
 					</div>
 
-					<div id="navbarBasicExample" class="navbar-menu">
-						<div class="navbar-start">
-							<a class="navbar-item" href="/admin">
-								Dashboard
-							</a>
+          <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+              <a class="navbar-item" href="/admin">
+                Dashboard
+              </a>
+              <a class="navbar-item" href="/admin/orders">
+                  Orders
+              </a>
+                <a class="navbar-item" href="/admin/products">
+                  Products
+                </a>
+                <a class="navbar-item" href="/admin/articles">
+                  Articles
+                </a>
+                <a class="navbar-item" href="/admin/customers">
+                  Customers
+                </a>
+            </div>
+          </div>
+        </nav>
+      </div>
 
-							<div class="navbar-item has-dropdown is-hoverable">
-								<a class="navbar-link">More</a>
-
-								<div class="navbar-dropdown">
-									<a class="navbar-item">Orders</a>
-									<a class="navbar-item">Products</a>
-									<a class="navbar-item">Articles</a>
-									<a class="navbar-item" href="/admin/customers">
-										Customers
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</nav>
-			</div>
-		)
-	}
+        )
+      }
 }
