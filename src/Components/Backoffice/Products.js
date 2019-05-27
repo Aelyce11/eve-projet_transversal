@@ -6,6 +6,7 @@ export default class Products extends Component {
     return(
       <div className="container">
       <h1>Products</h1>
+      <a class="button is-primary" href="/admin/new-product" >+ Ajouter un un produit</a>
       <table class="table is-fullwidth">
           <thead>
             <tr>

@@ -8,6 +8,7 @@ import Footer from './Components/Footer/Footer'
 import NavBulma from './Components/Backoffice/Navbar'
 import Dashboard from './Components/Backoffice/Dashboard'
 import Orders from './Components/Backoffice/Orders'
+import NewProducts from './Components/Backoffice/NewProduct'
 import Products from './Components/Backoffice/Products'
 import Articles from './Components/Backoffice/Articles'
 import Customers from './Components/Backoffice/Customers'
@@ -40,6 +41,7 @@ class App extends Component {
           <Route exact path="/admin/" component={Dashboard} />
           <Route exact path="/admin/orders" component={Orders} />
           <Route exact path="/admin/products" component={Products} />
+          <Route exact path="/admin/new-product" component={NewProducts} />
           <Route exact path="/admin/articles" component={Articles} />
 					<Route exact path="/admin/customers" component={Customers} />
 				</Router>

@@ -34,20 +34,20 @@ app.get('/users', (request, response) => {
     var nrow = []
 
     for (let index = 0; index < results.rows.length; index++) {
-        const row = results.rows[index];
+      const row = results.rows[index];
 
-        nrow.push({
-            id: row['id'],
-            lastname: row['firstname'],
-            firstname: row['lastname'],
-            email: row['email'],
-            phone: row['phone'],
-            id_role: row['id_role'],
-            Roles: {
-                id: row['role_id'],
-                name: row['name']
-            }
-        })
+      nrow.push({
+        id: row['id'],
+        lastname: row['firstname'],
+        firstname: row['lastname'],
+        email: row['email'],
+        phone: row['phone'],
+        id_role: row['id_role'],
+        Roles: {
+          id: row['role_id'],
+          name: row['name']
+        }
+      })
     }
     response.status(200).json(nrow)
     console.log(results.rows)
@@ -66,10 +66,10 @@ app.get('/users/:id', (request, response) => {
 
 // Register user
 app.post('/register', (request, response) => {
-  const { lastname, firstname, email, password, phone} = request.body;
+  const { lastname, firstname, email, password } = request.body;
   pool.query(
-    'INSERT INTO users (lastname, firstname, email, password, phone, id_role) VALUES ($1, $2, $3, $4, $5, 1)', 
-    [lastname, firstname, email, passwordHash.generate(password), phone], (error, results) => {
+    `INSERT INTO users (lastname, firstname, email, password, phone, id_role) VALUES ($1, $2, $3, $4, '' , 1)`, 
+    [lastname, firstname, email, passwordHash.generate(password)], (error, results) => {
       if (error) throw error;
 
     response.status(201).send(`User added with ID: ${results.insertId}`);
