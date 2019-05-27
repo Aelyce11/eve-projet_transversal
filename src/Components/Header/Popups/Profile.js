@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import api from '../../Api'
 
 import icon_profile from '../../../Pictures/header/icons/profile.svg'
 import next from '../../../Pictures/icons/darkgreen/arrow_right.svg'
@@ -11,7 +12,11 @@ export default class Profile extends Component {
 		super(props)
 		this.state = {
 			addClass: false,
-			content: 'center'
+			content: 'center',
+      lastname: "",
+      firstname: "",
+      email: "",
+      password: ""
 		}
 	}
 	toggle() {
@@ -20,6 +25,10 @@ export default class Profile extends Component {
 	setContent(name) {
 		this.setState({ content: name })
 	}
+
+  register() {
+      api.register(this.state.lastname, this.state.firstname, this.state.email, this.state.password)
+  }
 
 	render() {
 		let profileClass = [ 'profileButton' ]
@@ -120,29 +129,26 @@ export default class Profile extends Component {
 								<form>
 									<fieldset>
 										<legend>Nom : </legend>
-										<input type="text" placeholder="DUJARDIN" />
+										<input type="text" placeholder="DUJARDIN" value={this.state.lastname} onChange={(e) => { this.setState({lastname: e.target.value}) }}/>
 									</fieldset>
 									<fieldset>
 										<legend>Prénom : </legend>
-										<input type="text" placeholder="Ève" />
+										<input type="text" placeholder="Ève" value={this.state.firstname} onChange={(e) => { this.setState({firstname: e.target.value}) }} />
 									</fieldset>
 									<fieldset>
 										<legend>Adresse mail : </legend>
-										<input type="email" placeholder="eve.dujardin@gmail.com" />
+										<input type="email" placeholder="eve.dujardin@gmail.com" value={this.state.email} onChange={(e) => { this.setState({email: e.target.value}) }} />
 									</fieldset>
 									<fieldset>
 										<legend>Mot de passe : </legend>
-										<input
-											type="password"
-											placeholder="&bull; &bull; &bull; &bull; &bull; &bull; &bull; &bull;"
-										/>
+										<input type="password" placeholder="&bull; &bull; &bull; &bull; &bull; &bull; &bull; &bull;" value={this.state.password} onChange={(e) => { this.setState({password: e.target.value}) }} />
 										<img src={info} className="form-info" />
 									</fieldset>
 									<div>
 										<a href="#" onClick={() => this.setContent('connection')}>
 											Déjà membre ? Je me connecte
 										</a>
-										<button>
+										<button onClick={() => { this.register() } }>
 											Inscription
 											<img src={next} />
 										</button>
