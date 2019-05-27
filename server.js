@@ -151,9 +151,9 @@ app.get('/products', (request, response) => {
   })
 });
 
-app.post('/products', (request, response) => {
-  const { } = request.body;
-});
+// app.post('/products', (request, response) => {
+//   const { } = request.body;
+// });
 
 
 app.listen(port, () => {

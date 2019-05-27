@@ -1,4 +1,3 @@
-import './footer.css'
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
@@ -10,7 +9,7 @@ import logo_white from '../../Pictures/logo/logo-white.svg'
 export default class Footer extends Component {
 	render() {
 		return (
-			<footer>
+			<footer className="footer-eve">
 				<div>
 					<h3>Transparence</h3>
 					<ul>

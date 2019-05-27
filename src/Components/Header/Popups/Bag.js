@@ -1,6 +1,5 @@
-import './popup.css'
 import React, { Component } from 'react'
-import Item from './Item.js'
+import Item from './Item/Item.js'
 
 import icon_bag from '../../../Pictures/header/icons/bag.svg'
 
@@ -41,6 +40,7 @@ export default class Bag extends Component {
 						<button>Valider mon panier</button>
 					</div>
 				</div>
+				<div className="darkness" />
 			</div>
 		)
 	}

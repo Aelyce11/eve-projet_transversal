@@ -1,15 +1,13 @@
 import React, { Component } from 'react'
-import './bulma.min.css'
+// import './bulma.min.css'
 import api from '../Api'
-
 export default class Customers extends Component {
-
-  constructor() {
-    super()
-    this.state = {
-      customers: []
-    }
-  }
+	constructor() {
+		super()
+		this.state = {
+			customers: []
+		}
+	}
 
   componentDidMount() {
     api.getUsers().then(result => {
@@ -43,7 +41,7 @@ export default class Customers extends Component {
                   <td>{customer.firstname}</td>
                   <td>{customer.email}</td>
                   <td>{customer.phone}</td>
-                  <td>{customer.Role.name}</td>
+                  <td>{customer.Roles.name}</td>
                 </tr>
               )
             })}

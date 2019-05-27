@@ -1,4 +1,3 @@
-import './Navbar.css'
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
@@ -14,7 +13,7 @@ import notepad from '../../../Pictures/icons/darkgreen/notepad-stroke.svg'
 export default class Navbar extends Component {
 	render() {
 		return (
-			<nav className="navbar-header">
+			<nav className="navbar-eve">
 				<Link to="">
 					<img src={box} alt="Les boîtes" />
 					<p>Les boîtes</p>

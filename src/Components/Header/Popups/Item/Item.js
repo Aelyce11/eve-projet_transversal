@@ -1,8 +1,7 @@
-import './item.css'
 import React, { Component } from 'react'
 
-import product_placeholder from '../../../Pictures/placeholders/product.png'
-import cross from '../../../Pictures/icons/darkgreen/close.svg'
+import product_placeholder from '../../../../Pictures/placeholders/product.png'
+import cross from '../../../../Pictures/icons/darkgreen/close.svg'
 
 export default class Item extends Component {
 	render() {

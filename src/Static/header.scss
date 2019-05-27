@@ -1,16 +1,20 @@
-@import "../../Static/_Base.scss";
+// @import "../../Static/_Base.scss";
 
-header {
+.header-eve {
 	height: 152px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	box-sizing: border-box;
-	background-image: url(../../Pictures/header/header-bg_left.png), url(../../Pictures/header/header-bg_right.png);
+	background-color: $white;
+	background-image: url(../Pictures/header/header-bg_left.png), url(../Pictures/header/header-bg_right.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: bottom left, bottom right;
-	padding: 20px 50px;
+	position: relative;
+	z-index: 19;
+	padding: 1em 2.5em;
+
 	& > div {
 		flex: 1;
 		display: flex;

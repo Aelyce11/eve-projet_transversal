@@ -1,4 +1,3 @@
-import './accessibility.css'
 import React, { Component } from 'react'
 
 import icon_access from '../../../Pictures/header/icons/accessibility_white.svg'
@@ -108,6 +107,7 @@ export default class Accessibility extends Component {
 						</button>
 					</div>
 				</div>
+				<div className="darkness" />
 			</div>
 		)
 	}
