@@ -1,4 +1,3 @@
-import './popup.css'
 import React, { Component } from 'react'
 
 import icon_profile from '../../../Pictures/header/icons/profile.svg'

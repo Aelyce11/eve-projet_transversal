@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './Static/style.css'
 import Home from './Components/Home'
 import Blog from './Components/Blog'
 import Header from './Components/Header/Header'
@@ -14,27 +15,26 @@ class App extends Component {
 		return (
 			<div>
 				<Router>
-          <Route path="/admin/" component={NavBulma} />
-          
-          <Route path="/">
-            <Switch>
-              <Route path="/admin/" component={Dashboard} />
-              <Route path="/" component={Header} />
-            </Switch>
-          </Route>
-          
+					<Route path="/admin/" component={NavBulma} />
+
+					<Route path="/">
+						<Switch>
+							<Route path="/admin/" component={Dashboard} />
+							<Route path="/" component={Header} />
+						</Switch>
+					</Route>
+
 					<Route exact path="/" component={Home} />
 					<Route exact path="/blog" component={Blog} />
 
-          <Route path="/">
-            <Switch>
-              <Route path="/admin/" />
-              <Route path="/" component={Footer} />
-            </Switch>
-          </Route>
+					<Route path="/">
+						<Switch>
+							<Route path="/admin/" />
+							<Route path="/" component={Footer} />
+						</Switch>
+					</Route>
 
-          <Route exact path="/admin/customers" component={Customers} />
-
+					<Route exact path="/admin/customers" component={Customers} />
 				</Router>
 			</div>
 		)

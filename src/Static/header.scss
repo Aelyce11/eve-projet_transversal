@@ -1,4 +1,4 @@
-@import "../../Static/_Base.scss";
+// @import "../../Static/_Base.scss";
 
 .header-eve {
 	height: 152px;
@@ -7,7 +7,7 @@
 	align-items: center;
 	box-sizing: border-box;
 	background-color: $white;
-	background-image: url(../../Pictures/header/header-bg_left.png), url(../../Pictures/header/header-bg_right.png);
+	background-image: url(../Pictures/header/header-bg_left.png), url(../Pictures/header/header-bg_right.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: bottom left, bottom right;

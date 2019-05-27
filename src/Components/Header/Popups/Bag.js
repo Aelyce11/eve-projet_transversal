@@ -1,4 +1,3 @@
-import './popup.css'
 import React, { Component } from 'react'
 import Item from './Item/Item.js'
 

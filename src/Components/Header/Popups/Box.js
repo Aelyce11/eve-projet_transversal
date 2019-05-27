@@ -1,4 +1,3 @@
-import './popup.css'
 import React, { Component } from 'react'
 import icon_box from '../../../Pictures/header/icons/box.svg'
 

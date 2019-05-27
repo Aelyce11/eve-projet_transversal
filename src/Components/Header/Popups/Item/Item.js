@@ -1,4 +1,3 @@
-import './item.css'
 import React, { Component } from 'react'
 
 import product_placeholder from '../../../../Pictures/placeholders/product.png'
