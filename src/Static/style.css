@@ -20,25 +20,25 @@ body {
 }
 
 h1 {
-  font-family: 'Baloo Bhai', sans-serif;
+  font-family: "Baloo Bhai", sans-serif;
   font-size: 60px;
 }
 
 h2 {
-  font-family: 'Baloo Bhai', sans-serif;
+  font-family: "Baloo Bhai", sans-serif;
   font-size: 36px;
 }
 
 h3 {
-  font-family: 'Asap Condensed', sans-serif;
+  font-family: "Asap Condensed", sans-serif;
   font-size: 30px;
   font-weight: 600;
 }
 
 h4 {
-  font-family: 'Asap', sans-serif;
-  font-size: 20px;
-  font-weight: 500;
+  font-family: "Asap Condensed", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
 }
 
 a,
@@ -47,7 +47,7 @@ span,
 input,
 legend,
 button {
-  font-family: 'Asap', sans-serif;
+  font-family: "Asap", sans-serif;
   font-size: 20px;
 }
 
@@ -55,28 +55,32 @@ button {
   body {
     font-size: 16px;
   }
+
   h1 {
     font-size: 40px;
   }
+
   h2 {
     font-size: 28px;
   }
+
   h3 {
     font-size: 22px;
   }
+
   h4 {
     font-size: 16px;
   }
+
   a,
-  p,
-  span,
-  input,
-  legend,
-  button {
+p,
+span,
+input,
+legend,
+button {
     font-size: 16px;
   }
 }
-
 .header-eve {
   height: 152px;
   display: flex;
@@ -92,12 +96,10 @@ button {
   z-index: 19;
   padding: 1em 2.5em;
 }
-
 .header-eve > div {
   flex: 1;
   display: flex;
 }
-
 .header-eve .header-right {
   align-items: center;
   justify-content: space-around;
@@ -107,39 +109,32 @@ button {
   width: 100%;
   margin-left: 100px;
 }
-
 #searchbar * {
   box-sizing: border-box;
 }
-
 #searchbar .input {
   position: relative;
 }
-
 #searchbar .input input {
   width: 100%;
   border: 3px solid #2d4e47;
-  padding: .55em;
+  padding: 0.55em;
   border-radius: 100px;
 }
-
 #searchbar .input input::placeholder {
   font-style: italic;
   color: rgba(45, 78, 71, 0.5);
 }
-
 #searchbar .input button {
   position: absolute;
   right: 0px;
   background-color: #2d4e47;
-  padding: .4em;
+  padding: 0.4em;
   border-radius: 0px 100px 100px 100px;
 }
-
 #searchbar .input:focus ~ .dropdown {
   display: block;
 }
-
 #searchbar .dropdown {
   display: none;
 }
@@ -161,21 +156,18 @@ button {
   grid-column-gap: 2em;
   padding: 1em 8em;
 }
-
 .navbar-eve a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
-
 .navbar-eve p {
   color: #2d4e47;
 }
-
 .navbar-eve img {
   width: 30%;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 
 .darkness {
@@ -198,7 +190,6 @@ button {
 .profileButton {
   position: relative;
 }
-
 .boxButton .bubble,
 .bagButton .bubble,
 .profileButton .bubble {
@@ -210,19 +201,16 @@ button {
   background-color: #fff;
   z-index: 12;
 }
-
 .boxButton .bubble *,
 .bagButton .bubble *,
 .profileButton .bubble * {
   color: #2d4e47;
 }
-
 .boxButton .bubble.unfold,
 .bagButton .bubble.unfold,
 .profileButton .bubble.unfold {
   display: block;
 }
-
 .boxButton .bubble h3,
 .bagButton .bubble h3,
 .profileButton .bubble h3 {
@@ -233,11 +221,10 @@ button {
   text-align: center;
   border-radius: 12px 12px 0px 0px;
 }
-
 .boxButton .bubble h3::before,
 .bagButton .bubble h3::before,
 .profileButton .bubble h3::before {
-  content: '';
+  content: "";
   height: 0px;
   width: 0px;
   border: 30px solid transparent;
@@ -251,7 +238,6 @@ button {
   padding: 2em;
   background-color: #f5f9f8;
 }
-
 .bagButton .total {
   display: flex;
   flex-direction: column;
@@ -260,26 +246,22 @@ button {
   height: 5em;
   padding: 1.5em 0px;
 }
-
 .bagButton .total div {
   display: flex;
   justify-content: space-between;
   width: 40%;
 }
-
 .bagButton .total span {
   color: #000;
   text-transform: uppercase;
   max-width: 230px;
 }
-
 .bagButton .total hr {
   width: 50%;
   border: 1px dashed rgba(0, 102, 74, 0.5);
 }
-
 .bagButton .total button {
-  padding: .5em;
+  padding: 0.5em;
   border: 3px solid #00664a;
   box-shadow: 3px 3px 0px #00664a;
   border-radius: 50px;
@@ -290,7 +272,6 @@ button {
   padding: 2em;
   background-color: #f5f9f8;
 }
-
 .boxButton .detail {
   display: flex;
   flex-direction: column;
@@ -298,20 +279,17 @@ button {
   height: 6em;
   padding: 2em 1em;
 }
-
 .boxButton .detail span {
   color: #000;
-  padding: .25em 0px;
+  padding: 0.25em 0px;
   text-align: center;
 }
-
 .boxButton .detail .next {
   background-color: #fff1e7;
   color: #00664a;
 }
-
 .boxButton .detail button {
-  padding: .5em;
+  padding: 0.5em;
   border: 3px solid #00664a;
   box-shadow: 3px 3px 0px #00664a;
   border-radius: 50px;
@@ -323,19 +301,16 @@ button {
   display: flex;
   flex-direction: row;
 }
-
 .profileButton .connexion {
   display: flex;
   flex-direction: column;
 }
-
 .profileButton .connexion form {
   border-bottom: 2px solid #b3d1c9;
   padding: 2em;
   display: flex;
   flex-direction: column;
 }
-
 .profileButton .connexion form fieldset {
   position: relative;
   border: 1px solid #b3d1c9;
@@ -343,42 +318,35 @@ button {
   margin-bottom: 1em;
   margin-right: 3em;
 }
-
 .profileButton .connexion form input {
-  padding: .3em .6em .6em .6em;
+  padding: 0.3em 0.6em 0.6em 0.6em;
   min-width: 20em;
 }
-
 .profileButton .connexion form input::placeholder {
   color: rgba(45, 78, 71, 0.3);
   font-style: italic;
 }
-
 .profileButton .connexion form a {
   color: #2d4e47;
   text-decoration: underline;
-  font-size: .85em;
+  font-size: 0.85em;
 }
-
 .profileButton .connexion form > a {
   align-self: flex-end;
   margin-right: 3em;
 }
-
 .profileButton .connexion form legend {
-  margin-left: .5em;
-  padding: 0px .2em;
+  margin-left: 0.5em;
+  padding: 0px 0.2em;
 }
-
 .profileButton .connexion form div {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 1.5em;
 }
-
 .profileButton .connexion form button {
-  padding: .5em;
+  padding: 0.5em;
   border: 3px solid #00664a;
   box-shadow: 3px 3px 0px #00664a;
   border-radius: 50px;
@@ -386,11 +354,9 @@ button {
   display: flex;
   align-self: center;
 }
-
 .profileButton .connexion form button img {
-  margin-left: .5em;
+  margin-left: 0.5em;
 }
-
 .profileButton .connexion span {
   margin-top: -1em;
   align-self: center;
@@ -403,12 +369,10 @@ button {
   border-radius: 50px;
   text-transform: uppercase;
 }
-
 .profileButton .center {
   display: grid;
   grid-template-columns: 50% 2px 50%;
 }
-
 .profileButton .center div {
   padding: 4em;
   margin-bottom: 4em;
@@ -416,47 +380,40 @@ button {
   flex-direction: column;
   align-items: center;
 }
-
 .profileButton .center span {
   font-style: italic;
   white-space: nowrap;
   margin-bottom: 2em;
 }
-
 .profileButton .center hr {
   width: 2px;
   height: 100%;
   background-color: #b3d1c9;
 }
-
 .profileButton .center button {
-  padding: .5em;
+  padding: 0.5em;
   border: 3px solid #00664a;
   box-shadow: 3px 3px 0px #00664a;
   border-radius: 50px;
   color: #00664a;
 }
-
 .profileButton .inscription {
   display: flex;
   border-bottom: 2px solid #b3d1c9;
   flex-direction: column;
 }
-
 .profileButton .inscription form {
   border-bottom: 2px solid #b3d1c9;
   padding: 2em;
   display: flex;
   flex-direction: column;
 }
-
 .profileButton .inscription form .form-info {
   position: absolute;
   bottom: -1.8em;
   right: 0px;
   height: 1.2em;
 }
-
 .profileButton .inscription form fieldset {
   position: relative;
   border: 1px solid #b3d1c9;
@@ -464,37 +421,31 @@ button {
   margin-bottom: 1em;
   margin-right: 3em;
 }
-
 .profileButton .inscription form input {
-  padding: .3em .6em .6em .6em;
+  padding: 0.3em 0.6em 0.6em 0.6em;
   min-width: 20em;
 }
-
 .profileButton .inscription form input::placeholder {
   color: rgba(45, 78, 71, 0.3);
   font-style: italic;
 }
-
 .profileButton .inscription form a {
   color: #2d4e47;
   text-decoration: underline;
-  font-size: .85em;
+  font-size: 0.85em;
 }
-
 .profileButton .inscription form legend {
-  margin-left: .5em;
-  padding: 0px .2em;
+  margin-left: 0.5em;
+  padding: 0px 0.2em;
 }
-
 .profileButton .inscription form div {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 2.75em;
 }
-
 .profileButton .inscription form button {
-  padding: .5em;
+  padding: 0.5em;
   border: 3px solid #00664a;
   box-shadow: 3px 3px 0px #00664a;
   border-radius: 50px;
@@ -502,11 +453,9 @@ button {
   display: flex;
   align-self: center;
 }
-
 .profileButton .inscription form button img {
-  margin-left: .5em;
+  margin-left: 0.5em;
 }
-
 .profileButton .inscription span {
   margin-top: -1em;
   align-self: center;
@@ -519,7 +468,6 @@ button {
   border-radius: 50px;
   text-transform: uppercase;
 }
-
 .profileButton .fb-button,
 .profileButton .ggl-button {
   padding: 1em 5em;
@@ -531,17 +479,14 @@ button {
   margin: 1em 2em;
   box-sizing: border-box;
 }
-
 .profileButton .fb-button img,
 .profileButton .ggl-button img {
   position: absolute;
   left: -2px;
 }
-
 .profileButton .fb-button {
   border: 2px solid #1a509f;
 }
-
 .profileButton .ggl-button {
   border: 2px solid #00664a;
   margin-bottom: 2em;
@@ -550,7 +495,6 @@ button {
 .accessButton {
   position: relative;
 }
-
 .accessButton .mainButton {
   background-color: #1a509f;
   border: 3px solid #fff;
@@ -560,7 +504,6 @@ button {
   height: 70px;
   width: 70px;
 }
-
 .accessButton .bubble {
   display: none;
   position: absolute;
@@ -571,7 +514,6 @@ button {
   z-index: 12;
   box-shadow: 3px 0px 12px rgba(45, 78, 71, 0.6);
 }
-
 .accessButton .bubble h3 {
   background-color: #1a509f;
   color: #fff;
@@ -581,9 +523,8 @@ button {
   text-align: center;
   border-radius: 12px 12px 0px 0px;
 }
-
 .accessButton .bubble h3::before {
-  content: '';
+  content: "";
   height: 0px;
   width: 0px;
   border: 30px solid transparent;
@@ -592,47 +533,40 @@ button {
   top: -70px;
   left: 20px;
 }
-
 .accessButton .bubble button {
   border: 2px solid #1a509f;
   color: #1a509f;
   display: flex;
   align-items: center;
   border-radius: 50px;
-  padding: .5em;
-  font-family: 'Asap Condensed', sans-serif;
+  padding: 0.5em;
+  font-family: "Asap Condensed", sans-serif;
   font-weight: bolder;
   font-size: 20px;
   align-self: flex-end;
 }
-
 .accessButton .bubble button img {
-  margin-right: .5em;
+  margin-right: 0.5em;
 }
-
 .accessButton .bubble.unfold {
   display: block;
 }
-
 .accessButton .bubble > div {
   padding: 30px 50px;
   display: flex;
   flex-direction: column;
 }
-
 .accessButton .allOptions {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 40px;
 }
-
 .accessButton .accessOption {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 30px;
 }
-
 .accessButton .accessOption > div {
   border: 1px solid #1a509f;
   display: flex;
@@ -642,7 +576,6 @@ button {
   width: 160px;
   height: 100px;
 }
-
 .accessButton .accessOption .radio {
   height: 20px;
   width: 20px;
@@ -650,19 +583,17 @@ button {
   border-radius: 50%;
   margin-top: 10px;
 }
-
 .accessButton .accessOption p {
   background-color: #1a509f;
   border-radius: 0px 0px 12px 12px;
-  padding: .2em;
+  padding: 0.2em;
   color: #fff;
-  font-family: 'Asap Condensed', sans-serif;
+  font-family: "Asap Condensed", sans-serif;
   width: 100%;
   text-align: center;
   box-sizing: border-box;
   justify-self: flex-end;
 }
-
 .accessButton .accessOption img {
   margin: auto;
   padding: 5px;
@@ -678,25 +609,21 @@ button {
   padding: 10px 15px;
   box-sizing: border-box;
 }
-
 .cart_item button {
   position: absolute;
   right: 15px;
   top: 10px;
 }
-
 .cart_item div {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
 .cart_item > span {
   align-self: flex-end;
   flex: 1;
   text-align: right;
 }
-
 .cart_item > span:nth-of-type(2) {
   text-align: center;
 }
@@ -708,64 +635,159 @@ button {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-column-gap: 100px;
 }
-
 .footer-eve * {
   color: #fff;
 }
-
 .footer-eve h3 {
   margin-bottom: 35px;
 }
-
 .footer-eve .community {
   display: flex;
   flex-direction: column;
 }
-
 .footer-eve .community fieldset {
   position: relative;
   border: 1px solid #fff;
   border-radius: 12px;
   margin-bottom: 35px;
 }
-
 .footer-eve .community input {
-  padding: .3em .6em .6em .6em;
+  padding: 0.3em 0.6em 0.6em 0.6em;
 }
-
 .footer-eve .community input::placeholder {
   color: rgba(255, 255, 255, 0.3);
   font-style: italic;
 }
-
 .footer-eve .community legend {
-  margin-left: .5em;
-  padding: 0px .2em;
+  margin-left: 0.5em;
+  padding: 0px 0.2em;
 }
-
 .footer-eve .community button {
   position: absolute;
   background-color: #fff;
   color: #2d4e47;
   font-weight: bold;
-  padding: .75em .5em;
+  padding: 0.75em 0.5em;
   right: -1px;
   top: -0.6em;
   border-radius: 12px;
 }
-
 .footer-eve .community a {
   margin-right: 30px;
 }
-
 .footer-eve > div ul {
   max-width: 200px;
 }
-
 .footer-eve > div ul li {
   margin-bottom: 1em;
 }
-
 .footer-eve .logoContainer {
   display: flex;
 }
+
+.blog h1 {
+  background-image: linear-gradient(0deg, rgba(224, 255, 236, 0.72), rgba(224, 255, 236, 0.72)), url("../Pictures/visuals/transparence/transparency-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #2d4e47;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2em;
+}
+.blog .filterTags {
+  width: 50%;
+  margin: 3em auto;
+  display: flex;
+  justify-content: space-between;
+}
+.blog .filterTags input {
+  display: none;
+}
+.blog .filterTags button {
+  border: 2px solid #00664a;
+  color: #00664a;
+  padding: 0.5em 1em;
+  border-radius: 100px;
+}
+.blog .filterTags input:checked ~ button {
+  background-color: #00664a;
+  color: #fff;
+}
+.blog .article {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0px 2px 12px rgba(45, 78, 71, 0.1);
+  position: relative;
+  max-width: 730px;
+  margin-bottom: 1.5em;
+}
+.blog .article img {
+  max-width: 100%;
+  border-radius: 12px 12px 0px 0px;
+}
+.blog .article .articleTags {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+}
+.blog .article .articleTags span {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 0.5em 1em;
+  margin-right: 1em;
+  border-radius: 50px;
+}
+.blog .article > div:not(.articleTags) {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+.blog .article > div:not(.articleTags) h4 {
+  color: #2d4e47;
+}
+.blog .article > div:not(.articleTags) p {
+  color: #2d4e47;
+  margin: 1.5em 0px;
+}
+.blog .article > div:not(.articleTags) span {
+  color: #2d4e47;
+  font-size: 0.85em;
+  margin-top: 0.5em;
+}
+.blog .article > div:not(.articleTags) a {
+  color: #00664a;
+  display: flex;
+  align-items: center;
+  align-self: flex-end;
+  text-decoration: underline;
+}
+.blog .article > div:not(.articleTags) a img {
+  margin-left: 0.3em;
+}
+.blog .allArticles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0px 8em;
+}
+.blog .seeMore {
+  color: #000;
+  text-decoration: underline;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5em;
+}
+.blog .seeMore img {
+  transform: rotate(90deg);
+  margin-left: 0.3em;
+}
+.blog > img {
+  display: block;
+  margin: 4em auto;
+}
+
+/*# sourceMappingURL=style.css.map */
