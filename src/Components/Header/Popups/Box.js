@@ -27,7 +27,7 @@ export default class Box extends Component {
 		return (
 			<div className={boxClass.join(' ')}>
 				<button for="box" onClick={this.toggle.bind(this)}>
-					<img src={icon_box} alt="Mon panier" />
+					<img src={icon_box} alt="Ma box" />
 				</button>
 				<div className={dispClass.join(' ')}>
 					<h3>Ma boîte</h3>

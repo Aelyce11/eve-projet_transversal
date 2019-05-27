@@ -39,70 +39,70 @@ export default class Accessibility extends Component {
 						<div className="allOptions">
 							<div className="accessOption">
 								<div>
-									<img src={text_bigger} />
+									<img src={text_bigger} alt="Agrandir le texte" />
 									<p>Agrandir le texte</p>
 								</div>
 								<div className="radio" />
 							</div>
 							<div className="accessOption">
 								<div>
-									<img src={text_bolder} />
+									<img src={text_bolder} alt="Épaissir le texte" />
 									<p>Épaissir le texte</p>
 								</div>
 								<div className="radio" />
 							</div>
 							<div className="accessOption">
 								<div>
-									<img src={line_height} />
+									<img src={line_height} alt="Aérer le texte" />
 									<p>Aérer le texte</p>
 								</div>
 								<div className="radio" />
 							</div>
 							<div className="accessOption">
 								<div>
-									<img src={reading_assist} />
+									<img src={reading_assist} alt="Aide à la lecture" />
 									<p>Aide à la lecture</p>
 								</div>
 								<div className="radio" />
 							</div>
 							<div className="accessOption">
 								<div>
-									<img src={keyboard} />
+									<img src={keyboard} alt="Navigation clavier" />
 									<p>Navigation clavier</p>
 								</div>
 								<div className="radio" />
 							</div>
 							<div className="accessOption">
 								<div>
-									<img src={cursor} />
+									<img src={cursor} alt="Agrandir le curseur" />
 									<p>Agrandir le curseur</p>
 								</div>
 								<div className="radio" />
 							</div>
 							<div className="accessOption">
 								<div>
-									<img src={contrast} />
+									<img src={contrast} alt="Constraste élevé" />
 									<p>Constraste élevé</p>
 								</div>
 								<div className="radio" />
 							</div>
 							<div className="accessOption">
 								<div>
-									<img src={desaturate} />
+									<img src={desaturate} alt="Désaturer" />
 									<p>Désaturer</p>
 								</div>
 								<div className="radio" />
 							</div>
 							<div className="accessOption">
 								<div>
-									<img src={links} />
+									<img src={links} alt="Souligner les liens" />
 									<p>Souligner les liens</p>
 								</div>
 								<div className="radio" />
 							</div>
 						</div>
 						<button>
-							<img src={arrow_reset} />
+							<img src={arrow_reset} alt="Tout réinitialiser" />
 							Tout réinitialiser
 						</button>
 					</div>

@@ -43,7 +43,7 @@ export default class Profile extends Component {
 				// for center
 				<div className={profileClass.join(' ')}>
 					<button for="profile" onClick={this.toggle.bind(this)}>
-						<img src={icon_profile} alt="Mon panier" />
+						<img src={icon_profile} alt="Mon profil" />
 					</button>
 					<div className={dispClass.join(' ')}>
 						<h3>Mon espace</h3>
@@ -69,7 +69,7 @@ export default class Profile extends Component {
 				// for connection
 				<div className={profileClass.join(' ')}>
 					<button for="profile" onClick={this.toggle.bind(this)}>
-						<img src={icon_profile} alt="Mon panier" />
+						<img src={icon_profile} alt="Mon profil" />
 					</button>
 					<div className={dispClass.join(' ')}>
 						<h3>Mon espace</h3>
@@ -96,17 +96,17 @@ export default class Profile extends Component {
 										</a>
 										<button>
 											Connexion
-											<img src={next} />
+											<img src={next} alt="Se connecter" />
 										</button>
 									</div>
 								</form>
 								<span>Ou</span>
 								<button className="fb-button">
-									<img src={facebook} />
+									<img src={facebook} alt="Se connecter avec Facebook" />
 									Se connecter avec Facebook
 								</button>
 								<button className="ggl-button">
-									<img src={google} />
+									<img src={google} alt="Se connecter avec Google" />
 									Se connecter avec Google
 								</button>
 							</div>
@@ -120,7 +120,7 @@ export default class Profile extends Component {
 				// for inscription
 				<div className={profileClass.join(' ')}>
 					<button for="profile" onClick={this.toggle.bind(this)}>
-						<img src={icon_profile} alt="Mon panier" />
+						<img src={icon_profile} alt="Mon profil" />
 					</button>
 					<div className={dispClass.join(' ')}>
 						<h3>Mon espace</h3>
@@ -150,17 +150,17 @@ export default class Profile extends Component {
 										</a>
 										<button onClick={() => { this.register() } }>
 											Inscription
-											<img src={next} />
+											<img src={next} alt="S'inscrire" />
 										</button>
 									</div>
 								</form>
 								<span>Ou</span>
 								<button className="fb-button">
-									<img src={facebook} />
+									<img src={facebook} alt="Se connecter avec Facebook" />
 									Se connecter avec Facebook
 								</button>
 								<button className="ggl-button">
-									<img src={google} />
+									<img src={google} alt="Se connecter avec Google" />
 									Se connecter avec Google
 								</button>
 							</div>

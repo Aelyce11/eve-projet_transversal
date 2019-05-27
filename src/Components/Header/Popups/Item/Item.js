@@ -13,7 +13,7 @@ export default class Item extends Component {
 		}
 		return (
 			<div className="cart_item">
-				<img src={product_placeholder} />
+				<img src={product_placeholder} alt={infos.name} />
 				<div>
 					<span>{infos.name}</span>
 					<span className="description">{infos.desc}</span>
@@ -21,7 +21,7 @@ export default class Item extends Component {
 				<span>x{infos.quantity}</span>
 				<span>{infos.price}&euro;</span>
 				<button>
-					<img src={cross} />
+					<img src={cross} alt="Retirer du panier" />
 				</button>
 			</div>
 		)

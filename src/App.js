@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import './Static/style.css'
 import Home from './Components/Home'
-import Blog from './Components/Blog'
+import Blog from './Components/Blog/Blog'
+import Article from './Components/Blog/Article'
 import Header from './Components/Header/Header'
 import Footer from './Components/Footer/Footer'
 
@@ -30,6 +31,7 @@ class App extends Component {
           
 					<Route exact path="/" component={Home} />
 					<Route exact path="/blog" component={Blog} />
+					<Route exact path="/blog/:id" component={Article} />
 
           <Route path="/">
             <Switch>

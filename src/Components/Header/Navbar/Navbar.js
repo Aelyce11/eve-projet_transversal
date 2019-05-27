@@ -20,7 +20,7 @@ export default class Navbar extends Component {
 				</Link>
 				<Link to="">
 					<img src={cup} alt="Les cups" />
-					<p>Les boîtes</p>
+					<p>Les cups</p>
 				</Link>
 				<Link to="">
 					<img src={pad} alt="Les serviettes" />
@@ -38,7 +38,7 @@ export default class Navbar extends Component {
 					<img src={tag} alt="Les marques" />
 					<p>Les marques</p>
 				</Link>
-				<Link to="">
+				<Link to="/blog">
 					<img src={newspaper} alt="Le blog" />
 					<p>Le blog</p>
 				</Link>
