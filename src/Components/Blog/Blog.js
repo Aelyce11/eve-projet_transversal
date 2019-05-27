@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+import Banner from '../utilities/Banner'
+
 import next from '../../Pictures/icons/darkgreen/arrow_right.svg'
 import sep from '../../Pictures/others/separation.svg'
 
@@ -105,6 +107,7 @@ export default class Blog extends Component {
 					<img src={next} alt="Afficher plus d'articles" />
 				</a>
 				<img src={sep} />
+				<Banner />
 			</div>
 		)
 	}
