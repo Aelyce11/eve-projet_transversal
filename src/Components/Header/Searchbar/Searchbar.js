@@ -9,7 +9,7 @@ export default class Searchbar extends Component {
 					<div className="input">
 						<input type="text" placeholder="Recherche..." />
 						<button>
-							<img src={icon_search} />
+							<img src={icon_search} alt="Rechercher" />
 						</button>
 					</div>
 					<div className="dropdown">
