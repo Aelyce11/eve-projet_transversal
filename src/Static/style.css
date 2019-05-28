@@ -38,6 +38,12 @@ h3 {
 h4 {
   font-family: "Asap Condensed", sans-serif;
   font-size: 30px;
+  font-weight: 500;
+}
+
+h5 {
+  font-family: "Asap", sans-serif;
+  font-size: 25px;
   font-weight: 400;
 }
 
@@ -65,11 +71,17 @@ button {
   }
 
   h3 {
-    font-size: 22px;
+    font-size: 24px;
   }
 
   h4 {
-    font-size: 16px;
+    font-size: 24px;
+  }
+
+  h5 {
+    font-family: "Asap", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
   }
 
   a,
@@ -112,27 +124,27 @@ button {
 #searchbar * {
   box-sizing: border-box;
 }
-#searchbar .input {
+#searchbar .inputText {
   position: relative;
 }
-#searchbar .input input {
+#searchbar .inputText input {
   width: 100%;
   border: 3px solid #2d4e47;
   padding: 0.55em;
   border-radius: 100px;
 }
-#searchbar .input input::placeholder {
+#searchbar .inputText input::placeholder {
   font-style: italic;
   color: rgba(45, 78, 71, 0.5);
 }
-#searchbar .input button {
+#searchbar .inputText button {
   position: absolute;
   right: 0px;
   background-color: #2d4e47;
   padding: 0.4em;
   border-radius: 0px 100px 100px 100px;
 }
-#searchbar .input:focus ~ .dropdown {
+#searchbar .inputText:focus ~ .dropdown {
   display: block;
 }
 #searchbar .dropdown {
@@ -788,6 +800,157 @@ button {
 .blog > img {
   display: block;
   margin: 4em auto;
+}
+
+.blogArticle {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2em auto;
+}
+.blogArticle > a {
+  color: #00664a;
+  text-decoration: underline;
+  margin-left: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+}
+.blogArticle > a img {
+  transform: rotate(180deg);
+  margin-right: 0.3em;
+}
+.blogArticle aside {
+  position: absolute;
+  top: 3em;
+  right: 0px;
+}
+.blogArticle aside h5 {
+  background-color: #e0ffec;
+  border-radius: 12px 12px 0px 0px;
+  padding: 0.5em 1.3em;
+  display: inline;
+}
+.blogArticle aside div {
+  background-color: #e0ffec;
+  border-radius: 0px 0px 0px 12px;
+  padding: 2em 3em;
+  display: flex;
+  flex-direction: column;
+}
+.blogArticle aside div * {
+  color: #2d4e47;
+  text-decoration: underline;
+}
+.blogArticle aside div *:not(:last-child) {
+  margin-bottom: 1em;
+}
+.blogArticle .fullArticle {
+  width: 55%;
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+}
+.blogArticle .fullArticle > img {
+  width: 100%;
+}
+.blogArticle .fullArticle h1 {
+  font-family: "Asap Condensed", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  color: #2d4e47;
+}
+.blogArticle .fullArticle span {
+  font-size: 0.75em;
+  color: #2d4e47;
+}
+.blogArticle .fullArticle hr {
+  height: 2px;
+  width: 30%;
+  background-color: #b3d1c9;
+  align-self: center;
+}
+.blogArticle .fullArticle .intro {
+  margin-top: 1em;
+  color: #2d4e47;
+  font-style: italic;
+}
+.blogArticle .fullArticle .articleContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+.blogArticle .fullArticle .articleContent div {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.blogArticle .fullArticle .articleContent h4 {
+  color: #2d4e47;
+  margin-bottom: 1em;
+}
+.blogArticle .fullArticle .articleContent p {
+  color: #2d4e47;
+}
+.blogArticle .fullArticle .articleContent img {
+  flex: 1;
+}
+.blogArticle .fullArticle .articleContent:nth-of-type(odd) {
+  flex-direction: row-reverse;
+}
+.blogArticle .fullArticle .articleContent:nth-of-type(odd) img {
+  margin-right: 2em;
+}
+.blogArticle .fullArticle .articleContent:nth-of-type(even) img {
+  margin-left: 2em;
+}
+.blogArticle h4 {
+  margin: 2em auto;
+}
+.blogArticle .product {
+  max-width: 350px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 12px rgba(45, 78, 71, 0.1);
+}
+.blogArticle .product > div {
+  display: flex;
+  flex-direction: column;
+  padding: 1em 1.5em;
+}
+.blogArticle .product img {
+  width: 100%;
+  border-radius: 8px 8px 0px 0px;
+  border-bottom: 1px solid #b3d1c9;
+}
+.blogArticle .product .productName {
+  font-weight: 500;
+  color: #2d4e47;
+}
+.blogArticle .product .productType {
+  text-transform: uppercase;
+  color: #ff9780;
+}
+.blogArticle .product p {
+  color: #2d4e47;
+  font-size: 1em;
+}
+.blogArticle .product div div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+.blogArticle .product div div span {
+  color: #2d4e47;
+  font-size: 1em;
+}
+.blogArticle .product .price {
+  font-family: "Asap Condensed", sans-serif;
+  color: #2d4e47;
+  font-size: 1.5em;
 }
 
 .greenBanner {

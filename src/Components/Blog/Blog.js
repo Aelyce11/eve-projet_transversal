@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 import Banner from '../utilities/Banner'
 
@@ -7,6 +8,7 @@ import sep from '../../Pictures/others/separation.svg'
 
 export default class Blog extends Component {
 	render() {
+		// should probably put these in a separate component.. Oh well
 		const articles = [
 			{
 				id: 1,
@@ -85,7 +87,7 @@ export default class Blog extends Component {
 				</div>
 				<div className="allArticles">
 					{articles.map((article) => (
-						<a href={'/blog/' + article.id} className="article">
+						<Link to={'/blog/' + article.id} className="article">
 							<div className="articleTags">{article.tags.map((tag) => <span>{tag}</span>)}</div>
 							<img src={article.img_path} alt={article.title} />
 							<div>
@@ -99,7 +101,7 @@ export default class Blog extends Component {
 									<img src={next} alt="Lire la suite de l'article" />
 								</a>
 							</div>
-						</a>
+						</Link>
 					))}
 				</div>
 				<a className="seeMore">
