@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
+import GuideRedirect from './GuideRedirect'
+
 import next from '../../Pictures/icons/darkgreen/arrow_right.svg'
 
 export default class Article extends Component {
@@ -46,16 +48,10 @@ export default class Article extends Component {
 		return (
 			<div className="blogArticle">
 				<Link to="/blog">
-					<img src={next} />
+					<img src={next} alt="Retourner sur le blog" />
 					Retour aux articles
 				</Link>
-				<aside>
-					<h5>Un petit guide ?</h5>
-					<div>
-						<Link to="/">Petit guide : Quelle protection choisir ?</Link>
-						<Link to="/">Petit guide : Qu'est ce que l'hygiène intime ?</Link>
-					</div>
-				</aside>
+				<GuideRedirect />
 
 				<div className="fullArticle">
 					<img src={article.topimg} alt={article.title} />
@@ -73,15 +69,15 @@ export default class Article extends Component {
 								<h4>{para.subtitle}</h4>
 								<p>{para.text}</p>
 							</div>
-							<img src={para.img} />
+							<img src={para.img} alt={para.subtitle} />
 						</div>
 					))}
 				</div>
 
 				<h4>Produits suggéré pour vous par Ève :</h4>
 
-				<div className="product">
-					<img src={product.img} />
+				<Link to="/research/1" className="product">
+					<img src={product.img} alt={product.name} />
 					<div>
 						<span className="productName">{product.name}</span>
 						<span className="productType">{product.type}</span>
@@ -91,7 +87,7 @@ export default class Article extends Component {
 							<span className="price">{product.price}&euro;</span>
 						</div>
 					</div>
-				</div>
+				</Link>
 			</div>
 		)
 	}

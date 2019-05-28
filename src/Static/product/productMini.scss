@@ -1,0 +1,42 @@
+.productMini {
+	display: flex;
+	background-color: $white;
+	border: 1px solid $greenGrey;
+	border-radius: 8px;
+	padding: 1.25em .85em;
+	position: relative;
+
+	& > img {
+		flex: 1;
+	}
+	& > div {
+		display: flex;
+		flex-direction: column;
+		width: 73%;
+	}
+	.productType {
+		text-transform: uppercase;
+		font-family: 'Asap Condensed', sans-serif;
+		font-size: 1.1em;
+	}
+	.productPrice {
+		align-self: flex-end;
+		margin-bottom: 2em;
+	}
+	a {
+		position: absolute;
+		bottom: 1em;
+		right: 1em;
+		color: $green;
+		text-decoration: underline;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		img {
+			margin-left: .3em;
+		}
+	}
+	&:not(:last-of-type) {
+		margin-bottom: 1.5em;
+	}
+}

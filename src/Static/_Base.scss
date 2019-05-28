@@ -67,6 +67,58 @@ button {
 	font-size: 20px;
 }
 
+.button-bordered {
+	padding: .5em;
+	border: 3px solid $green;
+	box-shadow: 3px 3px 0px $green;
+	border-radius: 50px;
+	color: $green;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	img {
+		height: 1.5em;
+		margin: 0px .2em;
+	}
+}
+.input_number {
+	border-radius: 50px;
+	border: 1px solid $green;
+	display: flex;
+	margin: .2em;
+
+	button {
+		background-color: $green;
+		height: 100%;
+		width: 1.3em;
+		color: $white;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		&:first-of-type {
+			border-radius: 50px 0px 50px 50px;
+		}
+		&:last-of-type {
+			border-radius: 0px 50px 50px 50px;
+		}
+		&:disabled {
+			background-color: $greenGrey;
+		}
+	}
+	span {
+		height: 1.2em;
+		width: 2.5em;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	input {
+		display: none;
+	}
+}
+
 @media only screen and (max-width: 920px) {
 	body {
 		font-size: 16px;

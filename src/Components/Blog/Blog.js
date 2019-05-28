@@ -96,7 +96,7 @@ export default class Blog extends Component {
 									Le {article.pub_date} &bull; Par {article.author}
 								</span>
 								<p>{article.desc}</p>
-								<a>
+								<a href="#">
 									Lire la suite
 									<img src={next} alt="Lire la suite de l'article" />
 								</a>
@@ -108,7 +108,7 @@ export default class Blog extends Component {
 					Voir plus d'articles
 					<img src={next} alt="Afficher plus d'articles" />
 				</a>
-				<img src={sep} />
+				<img src={sep} alt="" />
 				<Banner />
 			</div>
 		)

@@ -1,23 +1,23 @@
-.container-sub{
-    background-color: #2D4E47;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 50px;
-    padding-bottom: 40px;
+.container-sub {
+  background-color: #2D4E47;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 40px;
 }
 
-.list{
+.list {
   display: flex;
   margin-bottom: 10px;
 }
 
-.list p{
+.list p {
   margin: 0 40px;
 }
 
-.div1{
+.div1 {
   width: 20px;
   height: 20px;
   background: #FFF5F2;
@@ -25,31 +25,27 @@
   transform: rotate(45deg);
 }
 
-.div2{
-width: 20px;
-height: 20px;
-background: #FFF5F2;
-border-radius: 18.5px 0px 18.5px 18.5px;
-transform: matrix(-0.71, 0.71, 0.71, 0.71, 0, 0);
+.div2 {
+  width: 20px;
+  height: 20px;
+  background: #FFF5F2;
+  border-radius: 18.5px 0px 18.5px 18.5px;
+  transform: matrix(-0.71, 0.71, 0.71, 0.71, 0, 0);
 }
 
-.box{
-    background-color: #FFF5F2;
-    height: 52px;
-    width: 30vw;
-    color: #2D4E47;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+.box {
+  background-color: #FFF5F2;
+  height: 52px;
+  width: 30vw;
+  color: #2D4E47;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-p{
-  color: white;
-}
-
-.abonnement{
+.abonnement {
   color: white;
   border: 2px solid #FFF1E7;
   border-radius: 33px;

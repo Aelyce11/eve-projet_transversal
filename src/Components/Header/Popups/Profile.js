@@ -13,10 +13,10 @@ export default class Profile extends Component {
 		this.state = {
 			addClass: false,
 			content: 'center',
-      lastname: "",
-      firstname: "",
-      email: "",
-      password: ""
+			lastname: '',
+			firstname: '',
+			email: '',
+			password: ''
 		}
 	}
 	toggle() {
@@ -26,9 +26,9 @@ export default class Profile extends Component {
 		this.setState({ content: name })
 	}
 
-  register() {
-      api.register(this.state.lastname, this.state.firstname, this.state.email, this.state.password)
-  }
+	register() {
+		api.register(this.state.lastname, this.state.firstname, this.state.email, this.state.password)
+	}
 
 	render() {
 		let profileClass = [ 'profileButton' ]
@@ -38,7 +38,7 @@ export default class Profile extends Component {
 			dispClass.push('unfold')
 		}
 
-		if (this.state.content == 'center') {
+		if (this.state.content === 'center') {
 			return (
 				// for center
 				<div className={profileClass.join(' ')}>
@@ -64,7 +64,7 @@ export default class Profile extends Component {
 					<div className="darkness" />
 				</div>
 			)
-		} else if (this.state.content == 'connection') {
+		} else if (this.state.content === 'connection') {
 			return (
 				// for connection
 				<div className={profileClass.join(' ')}>
@@ -115,7 +115,7 @@ export default class Profile extends Component {
 					<div className="darkness" />
 				</div>
 			)
-		} else if (this.state.content == 'inscription') {
+		} else if (this.state.content === 'inscription') {
 			return (
 				// for inscription
 				<div className={profileClass.join(' ')}>
@@ -129,26 +129,58 @@ export default class Profile extends Component {
 								<form>
 									<fieldset>
 										<legend>Nom : </legend>
-										<input type="text" placeholder="DUJARDIN" value={this.state.lastname} onChange={(e) => { this.setState({lastname: e.target.value}) }}/>
+										<input
+											type="text"
+											placeholder="DUJARDIN"
+											value={this.state.lastname}
+											onChange={(e) => {
+												this.setState({ lastname: e.target.value })
+											}}
+										/>
 									</fieldset>
 									<fieldset>
 										<legend>Prénom : </legend>
-										<input type="text" placeholder="Ève" value={this.state.firstname} onChange={(e) => { this.setState({firstname: e.target.value}) }} />
+										<input
+											type="text"
+											placeholder="Ève"
+											value={this.state.firstname}
+											onChange={(e) => {
+												this.setState({ firstname: e.target.value })
+											}}
+										/>
 									</fieldset>
 									<fieldset>
 										<legend>Adresse mail : </legend>
-										<input type="email" placeholder="eve.dujardin@gmail.com" value={this.state.email} onChange={(e) => { this.setState({email: e.target.value}) }} />
+										<input
+											type="email"
+											placeholder="eve.dujardin@gmail.com"
+											value={this.state.email}
+											onChange={(e) => {
+												this.setState({ email: e.target.value })
+											}}
+										/>
 									</fieldset>
 									<fieldset>
 										<legend>Mot de passe : </legend>
-										<input type="password" placeholder="&bull; &bull; &bull; &bull; &bull; &bull; &bull; &bull;" value={this.state.password} onChange={(e) => { this.setState({password: e.target.value}) }} />
+										<input
+											type="password"
+											placeholder="&bull; &bull; &bull; &bull; &bull; &bull; &bull; &bull;"
+											value={this.state.password}
+											onChange={(e) => {
+												this.setState({ password: e.target.value })
+											}}
+										/>
 										<img src={info} className="form-info" />
 									</fieldset>
 									<div>
 										<a href="#" onClick={() => this.setContent('connection')}>
 											Déjà membre ? Je me connecte
 										</a>
-										<button onClick={() => { this.register() } }>
+										<button
+											onClick={() => {
+												this.register()
+											}}
+										>
 											Inscription
 											<img src={next} alt="S'inscrire" />
 										</button>
