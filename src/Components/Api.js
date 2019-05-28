@@ -19,7 +19,16 @@ export default {
       headers: {'Content-Type' : 'application/json'},
       body: JSON.stringify(data)
     })
+  },
 
+  addProduct: ( title, vendor, category, path, desc, utilisation, absorbtion, flow, volume, composition, made_in, lifetime, sealing, ecology, price, quantity) => {
+    const data = { title, vendor, category, path, desc, utilisation, absorbtion, flow, volume, composition, made_in, lifetime, sealing, ecology, price, quantity }
+
+    fetch('http://localhost:4000/', {
+      method: 'POST',
+      headers: {'Content-Type' : 'application/json'},
+      body: JSON.stringify(data)
+    })
   }
 
 
