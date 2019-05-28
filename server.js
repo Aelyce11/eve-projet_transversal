@@ -107,9 +107,9 @@ app.get('/products', (request, response) => {
   pool.query(`
     SELECT products.*, images.path,product_category.name AS "category", product_vendor.name AS "vendor"
     FROM products
-    INNER JOIN images ON products.id_image = images.id
     INNER JOIN product_vendor ON products.id_vendor = product_vendor.id
     INNER JOIN product_category ON products.id_category = product_category.id
+    INNER JOIN images ON products.id_image = images.id
   `, (error, results) => {
     if (error) throw error
     var nrow = []
@@ -151,9 +151,29 @@ app.get('/products', (request, response) => {
   })
 });
 
-// app.post('/products', (request, response) => {
-//   const { } = request.body;
-// });
+app.post('/products', (request, response) => {
+  const { title, vendor, category, path, desc, utilisation, absorbtion, flow, volume, composition, made_in, lifetime, sealing, ecology, price, quantity } = request.body;
+
+  pool.query(`
+  INSERT INTO products(products.title, products.id_vendor, products.id_category, images.path, products.description, products.utilisation, products.absorbtion, products.flow, products.volume, products.composition, products.made_in, products.lifetime, products.sealing, products.ecology, products.price, products.quantity) 
+  VALUES ()
+  INNER JOIN images ON products.id_image = images.id
+  `,[title, vendor, category, `../../Pictures/products${path}`, desc, utilisation, absorbtion, flow, volume, composition, made_in, lifetime, sealing, ecology, price, quantity],
+  (error, results) => {
+    if (error) throw error;
+
+    response.status(201).send(`Product added with ID: ${results.insertId}`);
+  })
+});
+
+// app.get('/products/:id', (request, response) => {
+//   const id = parseInt(request.params.id)
+
+//   pool.query('SELECT * FROM products WHERE id = $1', [id], (error, results) => {
+//     if (error) throw error;
+
+//     response.status(200).json(results.rows)
+// })
 
 
 app.listen(port, () => {
