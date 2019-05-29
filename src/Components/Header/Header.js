@@ -1,14 +1,14 @@
-import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
-import Navbar from './Navbar/Navbar'
-import Searchbar from './Searchbar/Searchbar'
-import Accessibility from './Accessibility/Accessibility'
-import Box from './Popups/Box'
-import Bag from './Popups/Bag'
-import Profile from './Popups/Profile'
+import Navbar from './Navbar/Navbar';
+import Searchbar from './Searchbar/Searchbar';
+import Accessibility from './Accessibility/Accessibility';
+import Box from './Popups/Box';
+import Bag from './Popups/Bag';
+import Profile from './Popups/Profile';
 
-import logo from '../../Pictures/logo/logo-color_full.svg'
+import logo from '../../Pictures/logo/logo-color_full.svg';
 
 export default class Header extends Component {
 	render() {
@@ -30,6 +30,6 @@ export default class Header extends Component {
 				</header>
 				<Navbar />
 			</div>
-		)
+		);
 	}
 }

@@ -1,20 +1,20 @@
-import React, { Component } from 'react'
-import './Static/style.css'
-import Home from './Components/Home'
-import Blog from './Components/Blog/Blog'
-import Article from './Components/Blog/Article'
-import Product from './Components/Product/Product'
-import Header from './Components/Header/Header'
-import Footer from './Components/Footer/Footer'
+import React, { Component } from 'react';
+import './Static/style.css';
+import Home from './Components/Home';
+import Blog from './Components/Blog/Blog';
+import Article from './Components/Blog/Article';
+import Product from './Components/Product/Product';
+import Header from './Components/Header/Header';
+import Footer from './Components/Footer/Footer';
 
-import NavBulma from './Components/Backoffice/Navbar'
-import Dashboard from './Components/Backoffice/Dashboard'
-import Orders from './Components/Backoffice/Orders'
-import NewProducts from './Components/Backoffice/NewProduct'
-import Products from './Components/Backoffice/Products'
-import Articles from './Components/Backoffice/Articles'
-import Customers from './Components/Backoffice/Customers'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import NavBulma from './Components/Backoffice/Navbar';
+import Dashboard from './Components/Backoffice/Dashboard';
+import Orders from './Components/Backoffice/Orders';
+import NewProducts from './Components/Backoffice/NewProduct';
+import Products from './Components/Backoffice/Products';
+import Articles from './Components/Backoffice/Articles';
+import Customers from './Components/Backoffice/Customers';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 class App extends Component {
 	render() {
@@ -52,8 +52,8 @@ class App extends Component {
 					<Route exact path="/admin/customers" component={Customers} />
 				</Router>
 			</div>
-		)
+		);
 	}
 }
 
-export default App
+export default App;
