@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 import close from '../../Pictures/icons/darkgreen/close.svg'
 import bag from '../../Pictures/icons/darkgreen/basket-stroke.svg'
-import trash from '../../Pictures/icons/darkgreen/trash-stroke.svg'
+import trash from '../../Pictures/icons/red/trash-stroke.svg'
 import next from '../../Pictures/icons/darkgreen/arrow_right.svg'
 
 export default class PopupProductAdd extends Component {
@@ -17,7 +18,7 @@ export default class PopupProductAdd extends Component {
 		}
 
 		return (
-			<div className="popupProductAdd">
+			<section className="popupProductAdd">
 				<header>
 					<img src={close} alt="Fermer le panier" />
 					<p>Mon panier</p>
@@ -37,16 +38,16 @@ export default class PopupProductAdd extends Component {
 					</div>
 				</div>
 				<footer>
-					<button className="buttonBordered">
+					<Link to="/payment/cart" className="button-bordered">
 						Voir mon panier
 						<img src={bag} alt="" />
-					</button>
-					<button className="buttonLink">
+					</Link>
+					<button className="button-link">
 						<img src={next} alt="" />
 						Continuer mes achats
 					</button>
 				</footer>
-			</div>
+			</section>
 		)
 	}
 }

@@ -82,8 +82,10 @@ button {
 		margin: 0px .2em;
 	}
 }
-.buttonLink {
+.button-link {
 	text-decoration: underline;
+	display: flex;
+	align-items: center;
 	img {
 		margin: 0px .2em;
 	}

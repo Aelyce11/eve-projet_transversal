@@ -15,8 +15,8 @@ export default class AddToCart extends Component {
 		this.setState({ displayPopup: !this.state.displayPopup })
 	}
 	render() {
-		let popupClass = []
-		if (this.state.addClass) {
+		let popupClass = [ 'popupDisplay' ]
+		if (this.state.displayPopup) {
 			popupClass.push('disp')
 		}
 
@@ -43,7 +43,10 @@ export default class AddToCart extends Component {
 						Ajouter au panier
 					</button>
 				</div>
-				<Popup className={popupClass.join('')} />
+				<div className={popupClass.join(' ')}>
+					<Popup />
+					<section className="blurbg" />
+				</div>
 			</div>
 		)
 	}
