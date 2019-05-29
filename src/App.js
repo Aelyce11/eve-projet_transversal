@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './Static/style.css'
-import Home from './Components/Home'
+import Home from './Components/Home/Home'
 import Blog from './Components/Blog/Blog'
 import Article from './Components/Blog/Article'
 import Product from './Components/Product/Product'

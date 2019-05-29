@@ -1,0 +1,562 @@
+.container1 {
+  position: relative;
+}
+
+.t1 {
+  position: absolute;
+  width: 347px;
+  height: 96px;
+  left: 53vw;
+  top: 5vh;
+  font-family: Baloo Bhai;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 96px;
+  color: #2d4e47;
+}
+
+.t2 {
+  position: absolute;
+  width: 227px;
+  height: 96px;
+  left: 66vw;
+  top: 10vh;
+  font-family: Baloo Bhai;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 96px;
+  color: #2d4e47;
+}
+
+.t3 {
+  position: absolute;
+  width: 500px;
+  height: 206px;
+  left: 55vw;
+  top: 23vh;
+  font-family: Asap;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 150.2%;
+  text-align: justify;
+  color: #000000;
+}
+
+.image1 {
+  width: 100vw;
+}
+
+.savoirplus {
+  position: absolute;
+  width: 196px;
+  height: 46px;
+  left: 60vw;
+  top: 44vh;
+  background: #ffffff;
+  border: 2px solid #00664a;
+  box-sizing: border-box;
+  text-align: center;
+  padding-top: 10px;
+  color: #00664a;
+  box-shadow: 3px 2px 0px #00664a;
+  border-radius: 33px;
+}
+
+.container_avantage {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 15vh;
+}
+
+.childrenone {
+  display: flex;
+  align-items: center;
+}
+
+.childrentwo {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.logos {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  align-content: center;
+  text-align: center;
+}
+
+.logos p {
+  margin-top: 50px;
+}
+
+.green_container {
+  width: 100vw;
+  height: 55px;
+  background-color: #e0ffec;
+  margin-top: 50px;
+}
+
+.green_container p {
+  font-family: Baloo Bhai;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 45px;
+  line-height: 87px;
+  text-align: center;
+  color: #2d4e47;
+}
+
+.avantages {
+  width: 259px;
+  height: 34px;
+  font-family: Asap Condensed;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 34px;
+  align-items: center;
+  color: #2d4e47;
+}
+
+.euro {
+  width: 200px;
+  height: 129px;
+  font-family: Baloo Bhai;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 81px;
+  line-height: 129px;
+  color: #2d4e47;
+  text-shadow: 3px 4px 0px #ffd4bf;
+}
+
+.seulement {
+  width: 136px;
+  height: 34px;
+  font-family: Asap Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 34px;
+  align-items: center;
+  text-transform: uppercase;
+  color: #2d4e47;
+}
+
+.engagement {
+  position: absolute;
+  width: 156px;
+  height: 23px;
+  font-family: Asap Condensed;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  align-items: center;
+  color: #2d4e47;
+}
+
+.produit {
+  width: 100vw;
+  display: block;
+}
+
+.containermai {
+  position: relative;
+}
+
+.t4 {
+  width: 603px;
+  height: 96px;
+  position: absolute;
+  top: 4vh;
+  left: 9vw;
+  font-family: Baloo Bhai;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 37px;
+  line-height: 96px;
+  text-align: center;
+  color: #2d4e47;
+}
+
+.t5 {
+  position: absolute;
+  width: 237px;
+  height: 128px;
+  left: 18vw;
+  top: 10vh;
+  font-family: Baloo Bhai;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 55px;
+  line-height: 128px;
+  text-align: center;
+  color: #2d4e47;
+}
+
+.t6 {
+  position: absolute;
+  width: 567px;
+  height: 96px;
+  left: 35vw;
+  top: 13vh;
+  font-family: Baloo Bhai;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 96px;
+  color: #2d4e47;
+}
+
+.t7 {
+  position: absolute;
+  width: 613px;
+  height: 136px;
+  left: 27vw;
+  top: 28vh;
+  font-family: Asap;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 150.2%;
+  color: #000000;
+}
+
+.button_abonnement {
+  position: absolute;
+  width: 123px;
+  height: 23px;
+  left: 45vw;
+  top: 45vh;
+  font-family: Asap;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #00664a;
+  background: #ffffff;
+  border: 2px solid #00664a;
+  padding: 10px;
+  border-radius: 23px;
+}
+
+.banniere_marque {
+  width: 100vw;
+  height: 191px;
+  background-color: #fffaf6;
+  margin-bottom: 200px;
+}
+
+.banniere_marque ul {
+  display: flex;
+  padding-top: 60px;
+  align-content: center;
+  flex-direction: row;
+  margin-top: 60px;
+}
+
+.banniere_marque ul li img {
+  max-width: 60%;
+  height: auto;
+}
+
+.container_valeur {
+  position: relative;
+  margin-bottom: 90px;
+}
+
+.eve_image {
+  max-width: 25%;
+  height: auto;
+  position: absolute;
+  top: -21vh;
+  left: 75vw;
+  z-index: 1;
+}
+
+.valeur_eve {
+  margin-top: 50px;
+  position: relative;
+}
+
+.valeur_eve_container1 {
+  position: relative;
+}
+
+.oeil {
+  width: 100vw;
+  z-index: 2;
+  position: relative;
+}
+
+.valeur_t1 {
+  position: absolute;
+  left: 9vw;
+  top: 12vh;
+  font-family: Asap Condensed;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 38px;
+  z-index: 3;
+  letter-spacing: 0.1em;
+  color: #2d4e47;
+}
+
+.valeur_t2 {
+  position: absolute;
+  left: 9vw;
+  top: 22vh;
+  z-index: 3;
+  font-family: Asap;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 160.2%;
+  color: #2d4e47;
+}
+
+.valeur_t3 {
+  position: absolute;
+  z-index: 3;
+  left: 72vw;
+  top: 15vh;
+  font-family: Asap;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 160.2%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #2d4e47;
+}
+
+.div_white {
+  height: 400px;
+  position: relative;
+}
+
+.feuille_transp {
+  max-width: 50%;
+  height: auto;
+  position: relative;
+  margin-top: -8%;
+  z-index: 4;
+}
+
+.feuille_valeur {
+  max-width: 35%;
+  height: auto;
+  position: absolute;
+  margin-top: -4vh;
+  margin-left: 8vw;
+  z-index: 4;
+}
+
+.valeur_t4 {
+  position: absolute;
+  left: 6vw;
+  top: 10vh;
+  font-family: Asap Condensed;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 160.2%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  z-index: 5;
+  color: #2d4e47;
+}
+
+.valeur_t5 {
+  position: absolute;
+  left: 6vw;
+  top: 19vh;
+  font-family: Asap;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160.2%;
+  z-index: 5;
+  color: #2d4e47;
+}
+
+.valeur_t6 {
+  position: absolute;
+  left: 35vw;
+  top: 30vh;
+  font-family: Asap;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 160.2%;
+  text-align: center;
+  z-index: 5;
+  color: #2d4e47;
+}
+
+.valeur_t7 {
+  position: absolute;
+  left: 35vw;
+  top: 33vh;
+  font-family: Asap;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 160.2%;
+  z-index: 5;
+  text-align: center;
+  color: #2d4e47;
+}
+
+.valeur_t8 {
+  position: absolute;
+  left: 40vw;
+  top: 38vh;
+  z-index: 5;
+  font-family: Asap;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 160.2%;
+  text-align: center;
+  color: #2d4e47;
+}
+
+.valeur_eve_container3 {
+  position: relative;
+}
+
+.allbox {
+  width: 100vw;
+}
+
+.image_allbox {
+  width: 70%;
+  height: auto;
+  margin-top: 100px;
+  margin-left: 15vw;
+  margin-bottom: 100px;
+}
+
+.creebox {
+  width: 100vw;
+}
+
+.image_creebox {
+  width: 70%;
+  height: auto;
+  margin-top: 100px;
+  margin-left: 15vw;
+  margin-bottom: 100px;
+}
+
+.valeur_t9 {
+  position: absolute;
+  left: 7vw;
+  top: 11vh;
+  z-index: 5;
+  font-family: Asap Condensed;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 160.2%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #2d4e47;
+}
+
+.valeur_t10 {
+  position: absolute;
+  left: 7vw;
+  top: 21vh;
+  z-index: 5;
+  font-family: Asap;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 160.2%;
+  color: #2d4e47;
+}
+
+.container_commu {
+  display: flex;
+  position: relative;
+  margin-top: 50px;
+  justify-content: space-between;
+}
+
+.container_commu img {
+  max-width: 75%;
+}
+
+.container_commu_text h3 {
+  font-family: Asap Condensed;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  text-align: center;
+  color: #000000;
+}
+
+.container_commu_text p {
+  font-family: Asap;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  color: #000000;
+}
+
+.commu_t1 {
+  position: absolute;
+  top: 10vh;
+  left: 33vw;
+}
+
+.commu_t2 {
+  position: absolute;
+  top: 16vh;
+  left: 33vw;
+}
+
+.commu_t3 {
+  position: absolute;
+  top: 40vh;
+  left: 40vw;
+}
+
+.commu_t4 {
+  position: absolute;
+  top: 45vh;
+  left: 40vw;
+}
+
+.femmes_ensemble {
+  width: 30%;
+  display: flex;
+  position: relative;
+}
+
+.girls {
+  margin-top: 20vh;
+  position: relative;
+  width: 30vw;
+  height: 30%;
+}
+
+.article_container {
+  display: flex;
+}

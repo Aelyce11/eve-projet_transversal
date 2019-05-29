@@ -4,6 +4,8 @@ import ProductCard from '../Product/ProductCard'
 import Banner from '../utilities/Banner'
 
 import cartProduct from '../../Pictures/products/natracare_serviette_naturelle_ultra_extra_suoer.png'
+import trash from '../../Pictures/icons/red/trash-stroke.svg'
+import arrow from '../../Pictures/icons/darkgreen/arrow_right.svg'
 import separation from '../../Pictures/others/separation.svg'
 
 
@@ -14,7 +16,7 @@ export default class Cart extends Component {
       <div>
         <Header />
         <div className="step-one-payment">
-            <a href="">Continuer mes achats</a>
+            <a href="" ><img className="arrow" src={arrow} /> Continuer mes achats</a>
 
           <div class="cart">
             <span>Mon panier :</span>
@@ -31,21 +33,41 @@ export default class Cart extends Component {
                   </div>
                 </main>
                 <div class="cart-right">
-                  <img src="" alt="supprimer" />
+                  <button><img src={trash} alt="supprimer" /></button>
                   <span>x2 <br /> 35,80€</span>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="suggest-product">
-            <span>Suggestion spéciale pour vous :</span>
-            <div className="suggest-container">
-              <ProductCard />
-              <ProductCard />
+          <div className="recap-container">
+            <span>Récapitulatif :</span>
+            <div className="recap-cart">
+              <div className="recap-price">
+                <span>PANIER(2)</span><span>71,60€</span>
+              </div>
+              <p>-------------------------------------------------</p>
+              <div className="recap-total">
+                <span>TOTAL TTC</span><span>71,60€</span>
+              </div>
             </div>
+
+            <button className="button-bordered">
+						  Ajouter au panier
+					  </button>
           </div>
-          <img className="separation" src={separation} alt="" />
+
+          <div className="suggest-container">
+            <div className="suggest-product">
+              <span>Suggestion spéciale pour vous :</span>
+              <div className="suggest-card">
+                <ProductCard />
+                <ProductCard />
+              </div>
+            </div>
+
+            <img className="separation" src={separation} alt="" />
+          </div>
           <Banner />
         </div>
       </div>

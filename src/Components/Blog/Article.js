@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
 import GuideRedirect from './GuideRedirect'
+import ProductCard from '../Product/ProductCard'
 
 import next from '../../Pictures/icons/darkgreen/arrow_right.svg'
 
@@ -77,7 +78,7 @@ export default class Article extends Component {
 				<h4>Produits suggéré pour vous par Ève :</h4>
 
 				<Link to="/research/1" className="product">
-					<img src={product.img} alt={product.name} />
+					{/* <img src={product.img} alt={product.name} />
 					<div>
 						<span className="productName">{product.name}</span>
 						<span className="productType">{product.type}</span>
@@ -86,7 +87,8 @@ export default class Article extends Component {
 							<span>durée : env. {product.duration}</span>
 							<span className="price">{product.price}&euro;</span>
 						</div>
-					</div>
+          </div> */}
+					<ProductCard />
 				</Link>
 			</div>
 		)

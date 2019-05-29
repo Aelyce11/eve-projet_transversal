@@ -1,10 +1,10 @@
-import React, { Component } from 'react'
-import './WhySubscribe.css'
+import React, { Component } from 'react';
+import './WhySubscribe.css';
 
 export default class WhySubcribe extends Component {
 	render() {
 		return (
-			<div className="container-sub">
+			<div className="container">
 				<div className="list">
 					<div className="div1" />
 					<p>Pourquoi m'abonner ?</p>
@@ -18,6 +18,6 @@ export default class WhySubcribe extends Component {
 					Je m'abonne
 				</a>
 			</div>
-		)
+		);
 	}
 }

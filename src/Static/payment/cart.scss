@@ -1,39 +1,66 @@
 .step-one-payment {
     width: 100vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background: $greenLightGrey;
 
-    .cart-container {
-        border: 1px solid $greenGrey;
-        border-radius: 6px;
-        padding: 50px;
-
-
-        .cart-content {
-            display: flex;
-            border: 1px solid $greenGrey;
-            border-radius: 6px;
-
-
-
-            .cart-product {
-                height: 100px;
-            }
-        }
-    
-        main {
-            display: flex;
-            margin: 3em 0px;
-        }
+    a {
+        color: $green;
+        margin-left: 20%;
     }
 
-    .suggest-product {
-        width: 40%;
-        padding: 10px;
-        margin-bottom: 100px;
+    .arrow {
+        transform: rotate(180deg)
+    }
+    .cart {
+        width: 100vw;
+        margin-left: 20%;
+        margin-top: 50px;
+
+
+        .cart-container {
+            border: 1px solid $greenGrey;
+            border-radius: 6px;
+            padding: 50px;
+            width: 40%;
+            background: #fff;
+            margin-top: 20px;
     
-        .suggest-container {
+            .cart-content {
+                display: flex;
+                justify-content: space-around;
+                border: 1px solid $greenGrey;
+                border-radius: 6px;
+    
+                .cart-product {
+                    height: 100px;
+                }
+            }
+        
+            main {
+                display: flex;
+                margin: 3em 0px;
+            }
+
+            .cart-right {
+                display: flex;
+                flex-direction: column;
+
+                img {
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+    .suggest-container{ 
+        width: 100vw;
+        margin-left: 20%;
+
+        .suggest-product {
+            width: 40%;
+            padding: 10px;
+            margin-bottom: 100px;
+    
+        .suggest-card {
             display: flex;
             justify-content: center;
             .productCard {
@@ -66,6 +93,50 @@
                     }
                 }
             }
+        }
+    }
+}
+    .recap-container {
+        width: 25%;
+        position: absolute;
+        top: 30%;
+        right: 10%;
+
+        .recap-cart {
+            background: #fff;
+            padding: 20px;
+            border: 1px solid $greenGrey;
+            border-radius: 6px;
+            margin-top: 20px;
+        }
+        .recap-price {
+            display: flex;
+            justify-content: space-between;
+            color: $green;
+        }
+
+        p {
+            color: $greenGrey
+        }
+
+        .recap-total {
+            display: flex;
+            justify-content: space-between;
+            color: $green;
+        }
+
+        .button-bordered {
+            padding: .5em;
+            border: 3px solid $green;
+            box-shadow: 3px 3px 0px $green;
+            border-radius: 50px;
+            color: $green;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            margin-left: 25%;
+
         }
     }
     .separation {

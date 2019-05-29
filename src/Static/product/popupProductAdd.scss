@@ -1,0 +1,27 @@
+.popupProductAdd {
+	* {
+		margin: 0;
+		padding: 0;
+		text-decoration: none;
+	}
+	display: flex;
+	position: absolute;
+	// left: 0px;
+	// top: 0px;
+	width: 40%;
+	margin: auto;
+	background-color: $greenLightGrey;
+	header {
+		* {
+			border: none;
+		}
+		background-color: $salmonLight;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		img {
+			height: 1.5em;
+		}
+	}
+}

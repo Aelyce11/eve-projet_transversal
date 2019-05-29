@@ -72,6 +72,13 @@ button {
   margin: 0px 0.2em;
 }
 
+.buttonLink {
+  text-decoration: underline;
+}
+.buttonLink img {
+  margin: 0px 0.2em;
+}
+
 .input_number {
   border-radius: 50px;
   border: 1px solid #00664a;
@@ -859,7 +866,7 @@ button {
   align-items: center;
   margin: 2em auto;
 }
-.blogArticle > a {
+.blogArticle > a:not(.product) {
   color: #00664a;
   text-decoration: underline;
   margin-left: 10%;
@@ -868,34 +875,14 @@ button {
   justify-content: center;
   align-self: flex-start;
 }
-.blogArticle > a img {
+.blogArticle > a:not(.product) img {
   transform: rotate(180deg);
   margin-right: 0.3em;
 }
 .blogArticle aside {
   position: absolute;
   top: 3em;
-  right: 0px;
-}
-.blogArticle aside h5 {
-  background-color: #e0ffec;
-  border-radius: 12px 12px 0px 0px;
-  padding: 0.5em 1.3em;
-  display: inline;
-}
-.blogArticle aside div {
-  background-color: #e0ffec;
-  border-radius: 0px 0px 0px 12px;
-  padding: 2em 3em;
-  display: flex;
-  flex-direction: column;
-}
-.blogArticle aside div * {
-  color: #2d4e47;
-  text-decoration: underline;
-}
-.blogArticle aside div *:not(:last-child) {
-  margin-bottom: 1em;
+  right: -1em;
 }
 .blogArticle .fullArticle {
   width: 55%;
@@ -962,45 +949,8 @@ button {
   margin: 2em auto;
 }
 .blogArticle .product {
-  max-width: 350px;
-  border-radius: 8px;
-  box-shadow: 0px 2px 12px rgba(45, 78, 71, 0.1);
-}
-.blogArticle .product > div {
-  display: flex;
-  flex-direction: column;
-  padding: 1em 1.5em;
-}
-.blogArticle .product img {
-  width: 100%;
-  border-radius: 8px 8px 0px 0px;
-  border-bottom: 1px solid #b3d1c9;
-}
-.blogArticle .product .productName {
-  font-weight: 500;
-  color: #2d4e47;
-}
-.blogArticle .product .productType {
-  text-transform: uppercase;
-  color: #ff9780;
-}
-.blogArticle .product p {
-  color: #2d4e47;
-  font-size: 1em;
-}
-.blogArticle .product div div {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 1em;
-}
-.blogArticle .product div div span {
-  color: #2d4e47;
-  font-size: 1em;
-}
-.blogArticle .product .price {
-  font-family: "Asap Condensed", sans-serif;
-  color: #2d4e47;
-  font-size: 1.5em;
+  max-width: 400px;
+  margin-bottom: 5em;
 }
 
 .guideRedirect h5 {
@@ -1222,6 +1172,31 @@ button {
   font-size: 1.7em;
 }
 
+.popupProductAdd {
+  display: flex;
+  position: absolute;
+  width: 40%;
+  margin: auto;
+  background-color: #f5f9f8;
+}
+.popupProductAdd * {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+.popupProductAdd header {
+  background-color: #fff1e7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.popupProductAdd header * {
+  border: none;
+}
+.popupProductAdd header img {
+  height: 1.5em;
+}
+
 .productPage {
   display: flex;
   flex-direction: column;
@@ -1297,18 +1272,21 @@ button {
   align-items: center;
   height: 50px;
   width: 50px;
-  border: 4px solid #00664a;
+  border: 4px solid #009369;
   border-radius: 50%;
 }
 .payment-header .statement-container .long-line {
   height: 4px;
   width: 100px;
-  background: #00664a;
+  background: #009369;
 }
 .payment-header .statement-container .line {
   height: 4px;
   width: 50px;
-  background: #00664a;
+  background: #009369;
+}
+.payment-header .statement-container span {
+  font-size: 20px;
 }
 .payment-header .logo {
   width: 100px;
@@ -1317,64 +1295,128 @@ button {
 
 .step-one-payment {
   width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background: #f5f9f8;
 }
-.step-one-payment .cart-container {
+.step-one-payment a {
+  color: #00664a;
+  margin-left: 20%;
+}
+.step-one-payment .arrow {
+  transform: rotate(180deg);
+}
+.step-one-payment .cart {
+  width: 100vw;
+  margin-left: 20%;
+  margin-top: 50px;
+}
+.step-one-payment .cart .cart-container {
   border: 1px solid #b3d1c9;
   border-radius: 6px;
   padding: 50px;
+  width: 40%;
+  background: #fff;
+  margin-top: 20px;
 }
-.step-one-payment .cart-container .cart-content {
+.step-one-payment .cart .cart-container .cart-content {
   display: flex;
+  justify-content: space-around;
   border: 1px solid #b3d1c9;
   border-radius: 6px;
 }
-.step-one-payment .cart-container .cart-content .cart-product {
+.step-one-payment .cart .cart-container .cart-content .cart-product {
   height: 100px;
 }
-.step-one-payment .cart-container main {
+.step-one-payment .cart .cart-container main {
   display: flex;
   margin: 3em 0px;
 }
-.step-one-payment .suggest-product {
+.step-one-payment .cart .cart-container .cart-right {
+  display: flex;
+  flex-direction: column;
+}
+.step-one-payment .cart .cart-container .cart-right img {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.step-one-payment .suggest-container {
+  width: 100vw;
+  margin-left: 20%;
+}
+.step-one-payment .suggest-container .suggest-product {
   width: 40%;
   padding: 10px;
   margin-bottom: 100px;
 }
-.step-one-payment .suggest-product .suggest-container {
+.step-one-payment .suggest-container .suggest-product .suggest-card {
   display: flex;
   justify-content: center;
 }
-.step-one-payment .suggest-product .suggest-container .productCard {
+.step-one-payment .suggest-container .suggest-product .suggest-card .productCard {
   border-radius: 7px;
   box-shadow: 0px 2px 12px rgba(45, 78, 71, 0.1);
   background-color: #fff;
   margin-right: 1.5em;
   margin-top: 3em;
 }
-.step-one-payment .suggest-product .suggest-container .productCard > div {
+.step-one-payment .suggest-container .suggest-product .suggest-card .productCard > div {
   border-top: 1px solid #b3d1c9;
   display: flex;
   flex-direction: column;
   padding: 1em;
 }
-.step-one-payment .suggest-product .suggest-container .productCard > div img {
+.step-one-payment .suggest-container .suggest-product .suggest-card .productCard > div img {
   height: 1em;
   align-self: flex-end;
 }
-.step-one-payment .suggest-product .suggest-container .productCard > div p {
+.step-one-payment .suggest-container .suggest-product .suggest-card .productCard > div p {
   font-size: 1.3em;
 }
-.step-one-payment .suggest-product .suggest-container .productCard > div .productBrand {
+.step-one-payment .suggest-container .suggest-product .suggest-card .productCard > div .productBrand {
   color: #ff9780;
   text-transform: uppercase;
   font-size: 1em;
 }
-.step-one-payment .suggest-product .suggest-container .productCard > div .productPrice {
+.step-one-payment .suggest-container .suggest-product .suggest-card .productCard > div .productPrice {
   align-self: flex-end;
   font-size: 1.7em;
+}
+.step-one-payment .recap-container {
+  width: 25%;
+  position: absolute;
+  top: 30%;
+  right: 10%;
+}
+.step-one-payment .recap-container .recap-cart {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #b3d1c9;
+  border-radius: 6px;
+  margin-top: 20px;
+}
+.step-one-payment .recap-container .recap-price {
+  display: flex;
+  justify-content: space-between;
+  color: #00664a;
+}
+.step-one-payment .recap-container p {
+  color: #b3d1c9;
+}
+.step-one-payment .recap-container .recap-total {
+  display: flex;
+  justify-content: space-between;
+  color: #00664a;
+}
+.step-one-payment .recap-container .button-bordered {
+  padding: 0.5em;
+  border: 3px solid #00664a;
+  box-shadow: 3px 3px 0px #00664a;
+  border-radius: 50px;
+  color: #00664a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 25%;
 }
 .step-one-payment .separation {
   margin-bottom: 100px;
