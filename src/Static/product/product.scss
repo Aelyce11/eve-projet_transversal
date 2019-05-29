@@ -1,0 +1,48 @@
+@import "./productDetail.scss";
+@import "./addToCart.scss";
+@import "./productComment.scss";
+@import "./productMini.scss";
+@import "./productCard.scss";
+
+.productPage {
+	display: flex;
+	flex-direction: column;
+	& > div {
+		display: flex;
+		padding: 6em 10em;
+	}
+	.productComments,
+	.boxContent {
+		& > p {
+			background-color: $salmonLighter;
+			border-radius: 12px 12px 0px 0px;
+			display: inline;
+			padding: 1em 2em;
+			color: $greenDark;
+			font-size: 1.5em;
+		}
+		& > div {
+			padding: 1.5em;
+			background-color: $salmonLighter;
+			border-radius: 0px 12px 12px 12px;
+		}
+	}
+	.otherProducts {
+		& > div {
+			display: flex;
+		}
+	}
+	.productComments,
+	.otherProducts {
+		flex: 2;
+		margin-right: 5em;
+	}
+	.boxContent,
+	aside {
+		flex: 1;
+	}
+	& > img {
+		margin: 5em 0px;
+		align-self: center;
+	}
+}

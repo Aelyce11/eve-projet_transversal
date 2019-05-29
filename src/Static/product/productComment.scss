@@ -1,0 +1,45 @@
+.productComment {
+	background-color: $white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	* {
+		color: $greenDark;
+	}
+	header {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		img {
+			margin-right: 2em;
+		}
+	}
+	.commentAuthor {
+		padding: .5em 3em .5em 1em;
+		border: 2px solid $greenDark;
+		border-radius: 6px 6px 0px 6px;
+		position: relative;
+		&::after {
+			content: "";
+			height: 2px;
+			width: 4em;
+			background-color: $greenDark;
+			position: absolute;
+			right: -4em;
+			bottom: -2px;
+		}
+	}
+	.commentTitle {
+		font-family: 'Asap Condensed', sans-serif;
+	}
+	p {
+		padding: 1em;
+	}
+	& > span {
+		align-self: flex-end;
+		padding: 1em;
+	}
+	&:not(:last-of-type) {
+		margin-bottom: 1em;
+	}
+}

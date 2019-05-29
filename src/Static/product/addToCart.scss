@@ -1,0 +1,43 @@
+.addToCart {
+	flex: 1;
+	header {
+		display: flex;
+		width: 100%;
+
+		img {
+			padding: 1em 0px;
+			border: 1px solid $green;
+			border-radius: 9px 9px 0px 0px;
+			max-height: 70px;
+			width: 50%;
+			border-bottom: transparent;
+
+			&.unselected {
+				background-color: rgba($color: $salmon, $alpha: .1);
+				border-bottom: 1px solid $green;
+			}
+		}
+	}
+	& > div {
+		border: 1px solid $green;
+		border-top: transparent;
+		border-radius: 0px 0px 9px 9px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		& > span {
+			border-bottom: 2px solid $black;
+			padding: 2em 0px .2em 10%;
+			align-self: flex-start;
+		}
+		main {
+			display: flex;
+			align-items: center;
+			margin: 3em 0px;
+		}
+		& > button {
+			margin-bottom: 3em;
+		}
+	}
+}

@@ -1,0 +1,70 @@
+// @import "../../Static/_Base.scss";
+
+.header-eve {
+	height: 152px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+	background-color: $white;
+	background-image: url(../Pictures/header/header-bg_left.png), url(../Pictures/header/header-bg_right.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom left, bottom right;
+	position: relative;
+	z-index: 19;
+	padding: 1em 2.5em;
+
+	& > div {
+		flex: 1;
+		display: flex;
+	}
+	.header-right {
+		align-items: center;
+		justify-content: space-around;
+	}
+}
+
+#searchbar {
+	width: 100%;
+	margin-left: 100px;
+	* {
+		box-sizing: border-box;
+	}
+	.inputText {
+		position: relative;
+		input {
+			width: 100%;
+			border: 3px solid $greenDark;
+			padding: .55em;
+			border-radius: 100px;
+			&::placeholder {
+				font-style: italic;
+				color: rgba($color: $greenDark, $alpha: .5);
+			}
+		}
+		button {
+			position: absolute;
+			right: 0px;
+			background-color: $greenDark;
+			padding: .5em;
+			border-radius: 0px 100px 100px 100px;
+		}
+		&:focus ~ .dropdown {
+			display: block;
+		}
+	}
+	.dropdown {
+		display: none;
+	}
+}
+
+#logo {
+	height: 100px;
+	margin: 0px 100px;
+}
+
+.header-right {
+	display: flex;
+	align-items: center;
+}

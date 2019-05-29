@@ -1,0 +1,31 @@
+// @import "../../../Static/_Base.scss";
+
+.cart_item {
+	position: relative;
+	background-color: $white;
+	display: flex;
+	width: 530px;
+	border: 1px solid rgba($color: $green, $alpha: .5);
+	border-radius: 5px;
+	padding: 10px 15px;
+	box-sizing: border-box;
+
+	button {
+		position: absolute;
+		right: 15px;
+		top: 10px;
+	}
+	div {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	& > span {
+		align-self: flex-end;
+		flex: 1;
+		text-align: right;
+		&:nth-of-type(2) {
+			text-align: center;
+		}
+	}
+}

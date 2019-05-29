@@ -1,0 +1,159 @@
+.blogArticle {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 2em auto;
+
+	& > a {
+		color: $green;
+		text-decoration: underline;
+		margin-left: 10%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		align-self: flex-start;
+
+		img {
+			transform: rotate(180deg);
+			margin-right: .3em;
+		}
+	}
+	aside {
+		position: absolute;
+		top: 3em;
+		right: 0px;
+		h5 {
+			background-color: $greenLight;
+			border-radius: 12px 12px 0px 0px;
+			padding: .5em 1.3em;
+			display: inline;
+		}
+		div {
+			background-color: $greenLight;
+			border-radius: 0px 0px 0px 12px;
+			padding: 2em 3em;
+			display: flex;
+			flex-direction: column;
+
+			* {
+				color: $greenDark;
+				text-decoration: underline;
+
+				&:not(:last-child) {
+					margin-bottom: 1em;
+				}
+			}
+		}
+	}
+	.fullArticle {
+		width: 55%;
+		margin-top: 1em;
+		display: flex;
+		flex-direction: column;
+
+		& > img {
+			width: 100%;
+		}
+		h1 {
+			font-family: 'Asap Condensed', sans-serif;
+			font-size: 30px;
+			font-weight: 500;
+			color: $greenDark;
+		}
+		span {
+			font-size: .75em;
+			color: $greenDark;
+		}
+		hr {
+			height: 2px;
+			width: 30%;
+			background-color: $greenGrey;
+			align-self: center;
+		}
+		.intro {
+			margin-top: 1em;
+			color: $greenDark;
+			font-style: italic;
+		}
+		.articleContent {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			margin-bottom: 1em;
+
+			div {
+				flex: 2;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+			}
+			h4 {
+				color: $greenDark;
+				margin-bottom: 1em;
+			}
+			p {
+				color: $greenDark;
+			}
+			img {
+				flex: 1;
+			}
+
+			&:nth-of-type(odd) {
+				flex-direction: row-reverse;
+				img {
+					margin-right: 2em;
+				}
+			}
+			&:nth-of-type(even) img {
+				margin-left: 2em;
+			}
+		}
+	}
+
+	h4 {
+		margin: 2em auto;
+	}
+	.product {
+		max-width: 350px;
+		border-radius: 8px;
+		box-shadow: 0px 2px 12px rgba($color: $greenDark, $alpha: .1);
+
+		& > div {
+			display: flex;
+			flex-direction: column;
+			padding: 1em 1.5em;
+		}
+		img {
+			width: 100%;
+			border-radius: 8px 8px 0px 0px;
+			border-bottom: 1px solid $greenGrey;
+		}
+		.productName {
+			font-weight: 500;
+			color: $greenDark;
+		}
+		.productType {
+			text-transform: uppercase;
+			color: $salmon;
+		}
+		p {
+			color: $greenDark;
+			font-size: 1em;
+		}
+		div div {
+			display: flex;
+			justify-content: space-between;
+			margin-top: 1em;
+			span {
+				color: $greenDark;
+				font-size: 1em;
+			}
+		}
+		.price {
+			font-family: 'Asap Condensed', sans-serif;
+			color: $greenDark;
+			font-size: 1.5em;
+		}
+	}
+}
