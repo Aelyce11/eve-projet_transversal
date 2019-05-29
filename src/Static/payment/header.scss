@@ -1,0 +1,55 @@
+.payment-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+
+	.statement-container {
+		display: flex;
+		align-items: center;
+
+		.circle {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 50px;
+			width: 50px;
+			border: 4px solid #009369;
+			border-radius: 50%;
+		}
+
+		.long-line {
+			height: 4px;
+			width: 100px;
+			background: #009369;
+		}
+
+		.line {
+			height: 4px;
+			width: 50px;
+			background: #009369;
+		}
+
+		span {
+			font-size: 20px;
+		}
+
+		.line,
+		.long-line {
+			margin-bottom: 2em;
+		}
+
+		.one,
+		.two,
+		.three {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+	.logo {
+		width: 100px;
+		margin: 0px 50px;
+	}
+}

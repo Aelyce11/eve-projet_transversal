@@ -156,7 +156,7 @@ app.post('/products', (request, response) => {
 
   pool.query(`
   INSERT INTO products(products.title, products.id_vendor, products.id_category, images.path, products.description, products.utilisation, products.absorbtion, products.flow, products.volume, products.composition, products.made_in, products.lifetime, products.sealing, products.ecology, products.price, products.quantity) 
-  VALUES ()
+  VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16)
   INNER JOIN images ON products.id_image = images.id
   `,[title, vendor, category, `../../Pictures/products${path}`, desc, utilisation, absorbtion, flow, volume, composition, made_in, lifetime, sealing, ecology, price, quantity],
   (error, results) => {

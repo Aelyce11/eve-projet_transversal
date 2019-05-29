@@ -36,8 +36,15 @@
 			align-items: center;
 			margin: 3em 0px;
 		}
-		& > button {
+		& > a {
 			margin-bottom: 3em;
 		}
+	}
+}
+.popupDisplay {
+	display: none;
+
+	&.disp {
+		display: block;
 	}
 }

@@ -39,10 +39,14 @@ export default class AddToCart extends Component {
 							<button>+</button>
 						</div>
 					</main>
-					<Link to="/research/2" className="button-bordered" onClick={this.toggle.bind(this)}>
+					<button className="button-bordered" onClick={this.toggle.bind(this)}>
 						<img src={bag_stroke} alt="Je suis un panier" />
 						Ajouter au panier
-					</Link>
+					</button>
+				</div>
+				<div className={popupClass.join(' ')}>
+					<Popup />
+					<section className="blurbg" />
 				</div>
 			</div>
 		)

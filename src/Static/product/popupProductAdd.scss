@@ -94,10 +94,3 @@
 	z-index: 20;
 	background-color: rgba($color: $greenDark, $alpha: .7);
 }
-.popupDisplay {
-	display: none;
-
-	&.disp {
-		display: block;
-	}
-}
