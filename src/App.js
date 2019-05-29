@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
-import Home from './Components/Home'
-import Blog from './Components/Blog'
-import Header from './Components/Header/Header'
-import Footer from './Components/Footer/Footer'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import React, { Component } from 'react';
+import Home from './Components/Home/Home';
+import Blog from './Components/Blog';
+import Header from './Components/Header/Header';
+import Footer from './Components/Footer/Footer';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 class App extends Component {
 	render() {
@@ -16,8 +16,8 @@ class App extends Component {
 					<Route path="/" component={Footer} />
 				</Router>
 			</div>
-		)
+		);
 	}
 }
 
-export default App
+export default App;
