@@ -72,6 +72,13 @@ button {
   margin: 0px 0.2em;
 }
 
+.buttonLink {
+  text-decoration: underline;
+}
+.buttonLink img {
+  margin: 0px 0.2em;
+}
+
 .input_number {
   border-radius: 50px;
   border: 1px solid #00664a;
@@ -875,27 +882,7 @@ button {
 .blogArticle aside {
   position: absolute;
   top: 3em;
-  right: 0px;
-}
-.blogArticle aside h5 {
-  background-color: #e0ffec;
-  border-radius: 12px 12px 0px 0px;
-  padding: 0.5em 1.3em;
-  display: inline;
-}
-.blogArticle aside div {
-  background-color: #e0ffec;
-  border-radius: 0px 0px 0px 12px;
-  padding: 2em 3em;
-  display: flex;
-  flex-direction: column;
-}
-.blogArticle aside div * {
-  color: #2d4e47;
-  text-decoration: underline;
-}
-.blogArticle aside div *:not(:last-child) {
-  margin-bottom: 1em;
+  right: -1em;
 }
 .blogArticle .fullArticle {
   width: 55%;
@@ -1220,6 +1207,31 @@ button {
 .productCard > div .productPrice {
   align-self: flex-end;
   font-size: 1.7em;
+}
+
+.popupProductAdd {
+  display: flex;
+  position: absolute;
+  width: 40%;
+  margin: auto;
+  background-color: #f5f9f8;
+}
+.popupProductAdd * {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+.popupProductAdd header {
+  background-color: #fff1e7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.popupProductAdd header * {
+  border: none;
+}
+.popupProductAdd header img {
+  height: 1.5em;
 }
 
 .productPage {

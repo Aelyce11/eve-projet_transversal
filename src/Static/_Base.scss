@@ -82,6 +82,12 @@ button {
 		margin: 0px .2em;
 	}
 }
+.buttonLink {
+	text-decoration: underline;
+	img {
+		margin: 0px .2em;
+	}
+}
 .input_number {
 	border-radius: 50px;
 	border: 1px solid $green;
