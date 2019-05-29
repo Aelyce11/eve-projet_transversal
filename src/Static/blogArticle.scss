@@ -5,7 +5,7 @@
 	align-items: center;
 	margin: 2em auto;
 
-	& > a {
+	& > a:not(.product) {
 		color: $green;
 		text-decoration: underline;
 		margin-left: 10%;
@@ -92,46 +92,8 @@
 	h4 {
 		margin: 2em auto;
 	}
-	// .product {
-	// 	max-width: 350px;
-	// 	border-radius: 8px;
-	// 	box-shadow: 0px 2px 12px rgba($color: $greenDark, $alpha: .1);
-
-	// 	& > div {
-	// 		display: flex;
-	// 		flex-direction: column;
-	// 		padding: 1em 1.5em;
-	// 	}
-	// 	img {
-	// 		width: 100%;
-	// 		border-radius: 8px 8px 0px 0px;
-	// 		border-bottom: 1px solid $greenGrey;
-	// 	}
-	// 	.productName {
-	// 		font-weight: 500;
-	// 		color: $greenDark;
-	// 	}
-	// 	.productType {
-	// 		text-transform: uppercase;
-	// 		color: $salmon;
-	// 	}
-	// 	p {
-	// 		color: $greenDark;
-	// 		font-size: 1em;
-	// 	}
-	// 	div div {
-	// 		display: flex;
-	// 		justify-content: space-between;
-	// 		margin-top: 1em;
-	// 		span {
-	// 			color: $greenDark;
-	// 			font-size: 1em;
-	// 		}
-	// 	}
-	// 	.price {
-	// 		font-family: 'Asap Condensed', sans-serif;
-	// 		color: $greenDark;
-	// 		font-size: 1.5em;
-	// 	}
-	// }
+	.product {
+		max-width: 400px;
+		margin-bottom: 5em;
+	}
 }
