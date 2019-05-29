@@ -7,6 +7,8 @@ import Product from './Components/Product/Product'
 import Header from './Components/Header/Header'
 import Footer from './Components/Footer/Footer'
 
+import Cart from './Components/Payment/Cart'
+
 import NavBulma from './Components/Backoffice/Navbar'
 import Dashboard from './Components/Backoffice/Dashboard'
 import Orders from './Components/Backoffice/Orders'
@@ -26,6 +28,7 @@ class App extends Component {
 					<Route path="/">
 						<Switch>
 							<Route path="/admin/" />
+              <Route path="/payment/" />
 							<Route path="/" component={Header} />
 						</Switch>
 					</Route>
@@ -37,9 +40,13 @@ class App extends Component {
 					{/* <Route exact path="/research" component={} /> */}
 					<Route exact path="/research/:id" component={Product} />
 
+          <Route exact path="/payment/cart" component={Cart} />
+
 					<Route path="/">
 						<Switch>
 							<Route path="/admin/" />
+              {/* <Route path="/payment/" /> */}
+
 							<Route path="/" component={Footer} />
 						</Switch>
 					</Route>

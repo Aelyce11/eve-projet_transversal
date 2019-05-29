@@ -1281,4 +1281,103 @@ button {
   margin-top: 1em;
 }
 
+.payment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.payment-header .statement-container {
+  display: flex;
+  align-items: center;
+}
+.payment-header .statement-container .circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  border: 4px solid #00664a;
+  border-radius: 50%;
+}
+.payment-header .statement-container .long-line {
+  height: 4px;
+  width: 100px;
+  background: #00664a;
+}
+.payment-header .statement-container .line {
+  height: 4px;
+  width: 50px;
+  background: #00664a;
+}
+.payment-header .logo {
+  width: 100px;
+  margin: 0px 50px;
+}
+
+.step-one-payment {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.step-one-payment .cart-container {
+  border: 1px solid #b3d1c9;
+  border-radius: 6px;
+  padding: 50px;
+}
+.step-one-payment .cart-container .cart-content {
+  display: flex;
+  border: 1px solid #b3d1c9;
+  border-radius: 6px;
+}
+.step-one-payment .cart-container .cart-content .cart-product {
+  height: 100px;
+}
+.step-one-payment .cart-container main {
+  display: flex;
+  margin: 3em 0px;
+}
+.step-one-payment .suggest-product {
+  width: 40%;
+  padding: 10px;
+  margin-bottom: 100px;
+}
+.step-one-payment .suggest-product .suggest-container {
+  display: flex;
+  justify-content: center;
+}
+.step-one-payment .suggest-product .suggest-container .productCard {
+  border-radius: 7px;
+  box-shadow: 0px 2px 12px rgba(45, 78, 71, 0.1);
+  background-color: #fff;
+  margin-right: 1.5em;
+  margin-top: 3em;
+}
+.step-one-payment .suggest-product .suggest-container .productCard > div {
+  border-top: 1px solid #b3d1c9;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+.step-one-payment .suggest-product .suggest-container .productCard > div img {
+  height: 1em;
+  align-self: flex-end;
+}
+.step-one-payment .suggest-product .suggest-container .productCard > div p {
+  font-size: 1.3em;
+}
+.step-one-payment .suggest-product .suggest-container .productCard > div .productBrand {
+  color: #ff9780;
+  text-transform: uppercase;
+  font-size: 1em;
+}
+.step-one-payment .suggest-product .suggest-container .productCard > div .productPrice {
+  align-self: flex-end;
+  font-size: 1.7em;
+}
+.step-one-payment .separation {
+  margin-bottom: 100px;
+}
+
 /*# sourceMappingURL=style.css.map */
